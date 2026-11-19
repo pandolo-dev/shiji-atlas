@@ -1,0 +1,116 @@
+[
+ {
+  "kingdom": "西楚",
+  "king": "項羽",
+  "capital": "pengcheng",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "漢",
+  "king": "劉邦",
+  "capital": "nanzheng",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "雍",
+  "king": "章邯",
+  "capital": "feiqiu",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "塞",
+  "king": "司馬欣",
+  "capital": "yueyang",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "翟",
+  "king": "董翳",
+  "capital": "gaonu",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "西魏",
+  "king": "魏豹",
+  "capital": "pingyang",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "河南",
+  "king": "申陽",
+  "capital": "luoyang",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "韓",
+  "king": "韓成",
+  "capital": "yangzhai",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "殷",
+  "king": "司馬卬",
+  "capital": "zhaoge",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "代",
+  "king": "趙歇",
+  "capital": "dai",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "常山",
+  "king": "張耳",
+  "capital": "xiangguo",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "九江",
+  "king": "英布",
+  "capital": "liu",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "衡山",
+  "king": "吳芮",
+  "capital": "zhu",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "臨江",
+  "king": "共敖",
+  "capital": "jiangling",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "遼東",
+  "king": "韓廣",
+  "capital": "wuzhong",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "燕",
+  "king": "臧荼",
+  "capital": "ji",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "膠東",
+  "king": "田市",
+  "capital": "jimo",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "齊",
+  "king": "田都",
+  "capital": "linzi",
+  "year_bce": 206
+ },
+ {
+  "kingdom": "濟北",
+  "king": "田安",
+  "capital": "boyang",
+  "year_bce": 206
+ }
+]

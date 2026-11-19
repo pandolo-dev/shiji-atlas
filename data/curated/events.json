@@ -1,0 +1,223 @@
+[
+ {
+  "id": "dazexiang",
+  "title": "大澤鄉起義",
+  "year_bce": 209,
+  "month": 7,
+  "place_id": "dazexiang",
+  "keywords": [
+   "大澤鄉"
+  ],
+  "summary": "戍卒九百人屯大澤鄉，遇雨失期，陳勝、吳廣斬尉起事。"
+ },
+ {
+  "id": "zhangchu",
+  "title": "陳勝稱王，號張楚",
+  "year_bce": 209,
+  "month": 7,
+  "place_id": "chen",
+  "keywords": [
+   "張楚"
+  ],
+  "summary": "陳勝據陳，自立為王，國號張楚。"
+ },
+ {
+  "id": "pei_rise",
+  "title": "劉邦起兵於沛",
+  "year_bce": 209,
+  "month": 9,
+  "place_id": "pei",
+  "keywords": [
+   "沛令"
+  ],
+  "summary": "沛中父老殺沛令，迎劉季，立為沛公。"
+ },
+ {
+  "id": "wu_rise",
+  "title": "項梁、項籍起兵於吳",
+  "year_bce": 209,
+  "month": 9,
+  "place_id": "wu",
+  "keywords": [
+   "殷通"
+  ],
+  "summary": "項梁斬會稽守殷通，得精兵八千。"
+ },
+ {
+  "id": "huaiwang",
+  "title": "立楚懷王孫心",
+  "year_bce": 208,
+  "month": 6,
+  "place_id": "xue",
+  "keywords": [
+   "懷王孫心"
+  ],
+  "summary": "項梁從范增之計，求得楚懷王孫心於民間，立為楚懷王。"
+ },
+ {
+  "id": "dingtao",
+  "title": "項梁敗死定陶",
+  "year_bce": 208,
+  "month": 9,
+  "place_id": "dingtao",
+  "keywords": [
+   "定陶",
+   "項梁"
+  ],
+  "summary": "章邯夜襲楚軍於定陶，項梁戰死。"
+ },
+ {
+  "id": "julu",
+  "title": "鉅鹿之戰",
+  "year_bce": 207,
+  "month": 12,
+  "place_id": "julu",
+  "keywords": [
+   "破釜"
+  ],
+  "summary": "項羽渡河，沈船破釜，九戰大破秦軍於鉅鹿。"
+ },
+ {
+  "id": "bashang",
+  "title": "子嬰降，約法三章",
+  "year_bce": 206,
+  "month": 10,
+  "place_id": "bashang",
+  "keywords": [
+   "約法三章"
+  ],
+  "summary": "沛公至霸上，秦王子嬰降；還軍霸上，與關中父老約法三章。"
+ },
+ {
+  "id": "xinan",
+  "title": "新安坑卒",
+  "year_bce": 206,
+  "month": 11,
+  "place_id": "xinan",
+  "keywords": [
+   "新安"
+  ],
+  "summary": "楚軍夜擊坑秦降卒二十餘萬人於新安城南。"
+ },
+ {
+  "id": "hongmen",
+  "title": "鴻門宴",
+  "year_bce": 206,
+  "month": 12,
+  "place_id": "hongmen",
+  "keywords": [
+   "鴻門"
+  ],
+  "summary": "沛公從百餘騎見項羽於鴻門，范增舉玦，項莊舞劍。"
+ },
+ {
+  "id": "xianyang_burn",
+  "title": "屠咸陽，燒秦宮室",
+  "year_bce": 206,
+  "month": 12,
+  "place_id": "xianyang",
+  "keywords": [
+   "燒秦宮室"
+  ],
+  "summary": "項羽引兵西屠咸陽，殺子嬰，燒秦宮室，火三月不滅。"
+ },
+ {
+  "id": "fenfeng",
+  "title": "項羽分封十八王",
+  "year_bce": 206,
+  "month": 2,
+  "place_id": "pengcheng",
+  "keywords": [
+   "西楚霸王"
+  ],
+  "summary": "項羽自立為西楚霸王，都彭城，分天下王諸將。"
+ },
+ {
+  "id": "chencang",
+  "title": "還定三秦（陳倉）",
+  "year_bce": 206,
+  "month": 8,
+  "place_id": "chencang",
+  "keywords": [
+   "陳倉"
+  ],
+  "summary": "漢王從故道出，襲雍，敗章邯於陳倉。"
+ },
+ {
+  "id": "pengcheng",
+  "title": "彭城之戰",
+  "year_bce": 205,
+  "month": 4,
+  "place_id": "pengcheng",
+  "keywords": [
+   "睢水"
+  ],
+  "summary": "項羽以精兵三萬回擊彭城，漢卒十餘萬人入睢水，水為之不流。"
+ },
+ {
+  "id": "xingyang",
+  "title": "滎陽之圍，紀信誑楚",
+  "year_bce": 204,
+  "month": 5,
+  "place_id": "xingyang",
+  "keywords": [
+   "紀信"
+  ],
+  "summary": "紀信乘王車出東門詐降，漢王得以出西門遁去。"
+ },
+ {
+  "id": "guangwu",
+  "title": "廣武對峙",
+  "year_bce": 203,
+  "month": 10,
+  "place_id": "guangwu",
+  "keywords": [
+   "廣武"
+  ],
+  "summary": "楚漢臨廣武之間而軍，相守數月。"
+ },
+ {
+  "id": "honggou",
+  "title": "鴻溝議和",
+  "year_bce": 203,
+  "month": 9,
+  "place_id": "honggou",
+  "keywords": [
+   "洪溝"
+  ],
+  "summary": "項羽與漢約，中分天下，割洪溝以西為漢，以東為楚。"
+ },
+ {
+  "id": "gaixia",
+  "title": "垓下之圍",
+  "year_bce": 202,
+  "month": 12,
+  "place_id": "gaixia",
+  "keywords": [
+   "垓下"
+  ],
+  "summary": "項王至垓下，兵少食盡，夜聞漢軍四面皆楚歌。"
+ },
+ {
+  "id": "wujiang",
+  "title": "項羽自刎烏江",
+  "year_bce": 202,
+  "month": 12,
+  "place_id": "wujiang",
+  "keywords": [
+   "烏江"
+  ],
+  "summary": "烏江亭長艤船待，項王不肯渡，自刎而死。"
+ },
+ {
+  "id": "emperor",
+  "title": "劉邦即皇帝位",
+  "year_bce": 202,
+  "month": 2,
+  "place_id": "dingtao",
+  "keywords": [
+   "即皇帝位"
+  ],
+  "summary": "二月甲午，漢王即皇帝位於汜水之陽。"
+ }
+]

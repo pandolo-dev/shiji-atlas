@@ -1,0 +1,1384 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.12,
+     33.49
+    ]
+   },
+   "properties": {
+    "id": "dazexiang",
+    "name": "大澤鄉",
+    "kind": "settlement",
+    "modern": "安徽宿州市埇橋區大澤鄉鎮",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "209": 4
+    },
+    "mentions_total": 4,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.08,
+     33.4
+    ]
+   },
+   "properties": {
+    "id": "qi",
+    "name": "蘄",
+    "kind": "county",
+    "modern": "安徽宿州市埇橋區蘄縣鎮",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "209": 4
+    },
+    "mentions_total": 4,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.88,
+     33.73
+    ]
+   },
+   "properties": {
+    "id": "chen",
+    "name": "陳",
+    "kind": "county",
+    "modern": "河南周口市淮陽區",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 1,
+     "208": 8,
+     "209": 16
+    },
+    "mentions_total": 25,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.88,
+     40.33
+    ]
+   },
+   "properties": {
+    "id": "yuyang",
+    "name": "漁陽",
+    "kind": "county",
+    "modern": "北京密雲區西南",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "209": 2
+    },
+    "mentions_total": 2,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.93,
+     34.73
+    ]
+   },
+   "properties": {
+    "id": "pei",
+    "name": "沛",
+    "kind": "county",
+    "modern": "江蘇徐州市沛縣",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "205": 5,
+     "206": 1,
+     "208": 1,
+     "209": 4
+    },
+    "mentions_total": 11,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.6,
+     34.7
+    ]
+   },
+   "properties": {
+    "id": "feng",
+    "name": "豐",
+    "kind": "county",
+    "modern": "江蘇徐州市豐縣",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 2,
+     "208": 13,
+     "209": 1
+    },
+    "mentions_total": 16,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.45,
+     34.17
+    ]
+   },
+   "properties": {
+    "id": "dang",
+    "name": "碭",
+    "kind": "county",
+    "modern": "河南永城市芒碭山一帶",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "208": 5
+    },
+    "mentions_total": 5,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.2,
+     34.8
+    ]
+   },
+   "properties": {
+    "id": "xue",
+    "name": "薛",
+    "kind": "county",
+    "modern": "山東滕州市薛國故城",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "208": 6,
+     "209": 1
+    },
+    "mentions_total": 7,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.18,
+     34.27
+    ]
+   },
+   "properties": {
+    "id": "pengcheng",
+    "name": "彭城",
+    "kind": "capital",
+    "modern": "江蘇徐州市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 1,
+     "203": 2,
+     "204": 9,
+     "205": 10,
+     "206": 7,
+     "207": 1,
+     "208": 9,
+     "209": 1
+    },
+    "mentions_total": 40,
+    "kingdom_206": "西楚",
+    "king_206": "項羽"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.62,
+     31.3
+    ]
+   },
+   "properties": {
+    "id": "wu",
+    "name": "吳",
+    "kind": "county",
+    "modern": "江蘇蘇州市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "208": 1,
+     "209": 6
+    },
+    "mentions_total": 7,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.03,
+     37.07
+    ]
+   },
+   "properties": {
+    "id": "julu",
+    "name": "鉅鹿",
+    "kind": "county",
+    "modern": "河北邢台市平鄉縣",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "207": 7,
+     "208": 8
+    },
+    "mentions_total": 15,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.57,
+     35.07
+    ]
+   },
+   "properties": {
+    "id": "dingtao",
+    "name": "定陶",
+    "kind": "county",
+    "modern": "山東菏澤市定陶區",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 6,
+     "208": 12,
+     "209": 1
+    },
+    "mentions_total": 19,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.05,
+     36.17
+    ]
+   },
+   "properties": {
+    "id": "donge",
+    "name": "東阿",
+    "kind": "county",
+    "modern": "山東聊城市陽谷縣阿城鎮",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 1,
+     "208": 8
+    },
+    "mentions_total": 9,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.03,
+     35.76
+    ]
+   },
+   "properties": {
+    "id": "puyang",
+    "name": "濮陽",
+    "kind": "county",
+    "modern": "河南濮陽市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "208": 6
+    },
+    "mentions_total": 6,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.62,
+     34.66
+    ]
+   },
+   "properties": {
+    "id": "chenliu",
+    "name": "陳留",
+    "kind": "county",
+    "modern": "河南開封市祥符區陳留鎮",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 2,
+     "204": 1,
+     "207": 5,
+     "208": 4
+    },
+    "mentions_total": 12,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.47,
+     34.87
+    ]
+   },
+   "properties": {
+    "id": "xingyang",
+    "name": "滎陽",
+    "kind": "county",
+    "modern": "河南鄭州市惠濟區古滎鎮",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 1,
+     "203": 4,
+     "204": 28,
+     "205": 16,
+     "207": 2,
+     "208": 6,
+     "209": 8
+    },
+    "mentions_total": 65,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.23,
+     34.85
+    ]
+   },
+   "properties": {
+    "id": "chenggao",
+    "name": "成皋",
+    "kind": "county",
+    "modern": "河南滎陽市汜水鎮",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 3,
+     "203": 13,
+     "204": 19,
+     "205": 3,
+     "206": 1
+    },
+    "mentions_total": 39,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.42,
+     34.92
+    ]
+   },
+   "properties": {
+    "id": "aocang",
+    "name": "敖倉",
+    "kind": "granary",
+    "modern": "河南滎陽市敖山",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 2,
+     "204": 7,
+     "205": 1,
+     "208": 1,
+     "209": 1
+    },
+    "mentions_total": 12,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.5,
+     34.93
+    ]
+   },
+   "properties": {
+    "id": "guangwu",
+    "name": "廣武",
+    "kind": "fort",
+    "modern": "河南滎陽市廣武山漢霸二王城",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 8,
+     "204": 6,
+     "206": 1
+    },
+    "mentions_total": 15,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.53,
+     34.94
+    ]
+   },
+   "properties": {
+    "id": "honggou",
+    "name": "鴻溝",
+    "kind": "canal",
+    "modern": "河南滎陽市廣武山東（鴻溝口）",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 5
+    },
+    "mentions_total": 5,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     112.62,
+     34.72
+    ]
+   },
+   "properties": {
+    "id": "luoyang",
+    "name": "洛陽",
+    "kind": "capital",
+    "modern": "河南洛陽市漢魏故城",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 13,
+     "205": 2,
+     "206": 3,
+     "207": 2
+    },
+    "mentions_total": 20,
+    "kingdom_206": "河南",
+    "king_206": "申陽"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     112.13,
+     34.72
+    ]
+   },
+   "properties": {
+    "id": "xinan",
+    "name": "新安",
+    "kind": "county",
+    "modern": "河南洛陽市新安縣",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 1,
+     "206": 5
+    },
+    "mentions_total": 6,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     110.92,
+     34.63
+    ]
+   },
+   "properties": {
+    "id": "hangu",
+    "name": "函谷關",
+    "kind": "pass",
+    "modern": "河南靈寶市秦函谷關",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 5
+    },
+    "mentions_total": 5,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     110.65,
+     33.57
+    ]
+   },
+   "properties": {
+    "id": "wuguan",
+    "name": "武關",
+    "kind": "pass",
+    "modern": "陝西商洛市丹鳳縣武關鎮",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 1,
+     "204": 2,
+     "206": 3,
+     "207": 2,
+     "208": 1,
+     "209": 2
+    },
+    "mentions_total": 11,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.32,
+     34.15
+    ]
+   },
+   "properties": {
+    "id": "lantian",
+    "name": "藍田",
+    "kind": "county",
+    "modern": "陝西西安市藍田縣",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "207": 3
+    },
+    "mentions_total": 3,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.05,
+     34.25
+    ]
+   },
+   "properties": {
+    "id": "bashang",
+    "name": "霸上",
+    "kind": "camp",
+    "modern": "陝西西安市白鹿原北端",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 15
+    },
+    "mentions_total": 15,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.3,
+     34.39
+    ]
+   },
+   "properties": {
+    "id": "hongmen",
+    "name": "鴻門",
+    "kind": "camp",
+    "modern": "陝西西安市臨潼區新豐街道鴻門堡",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 7
+    },
+    "mentions_total": 7,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.79,
+     34.38
+    ]
+   },
+   "properties": {
+    "id": "xianyang",
+    "name": "咸陽",
+    "kind": "capital",
+    "modern": "陝西咸陽市渭城區窯店秦咸陽城遺址",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "204": 1,
+     "206": 16,
+     "207": 7,
+     "208": 2,
+     "209": 6
+    },
+    "mentions_total": 32,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.25,
+     34.66
+    ]
+   },
+   "properties": {
+    "id": "yueyang",
+    "name": "櫟陽",
+    "kind": "capital",
+    "modern": "陝西西安市閻良區武屯櫟陽城遺址",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 5,
+     "205": 4,
+     "206": 5
+    },
+    "mentions_total": 14,
+    "kingdom_206": "塞",
+    "king_206": "司馬欣"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.48,
+     34.3
+    ]
+   },
+   "properties": {
+    "id": "feiqiu",
+    "name": "廢丘",
+    "kind": "capital",
+    "modern": "陝西興平市東南",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "205": 6,
+     "206": 6
+    },
+    "mentions_total": 12,
+    "kingdom_206": "雍",
+    "king_206": "章邯"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.15,
+     34.37
+    ]
+   },
+   "properties": {
+    "id": "chencang",
+    "name": "陳倉",
+    "kind": "county",
+    "modern": "陝西寶雞市陳倉區",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 2
+    },
+    "mentions_total": 2,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     107.03,
+     33.07
+    ]
+   },
+   "properties": {
+    "id": "nanzheng",
+    "name": "南鄭",
+    "kind": "capital",
+    "modern": "陝西漢中市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "204": 1,
+     "206": 14,
+     "208": 1
+    },
+    "mentions_total": 16,
+    "kingdom_206": "漢",
+    "king_206": "劉邦"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     112.53,
+     33.0
+    ]
+   },
+   "properties": {
+    "id": "wan",
+    "name": "宛",
+    "kind": "county",
+    "modern": "河南南陽市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 1,
+     "207": 9
+    },
+    "mentions_total": 10,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.55,
+     33.55
+    ]
+   },
+   "properties": {
+    "id": "lingbi",
+    "name": "靈壁",
+    "kind": "county",
+    "modern": "安徽宿州市靈璧縣一帶",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 1,
+     "205": 3
+    },
+    "mentions_total": 4,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.33,
+     34.45
+    ]
+   },
+   "properties": {
+    "id": "xiayi",
+    "name": "下邑",
+    "kind": "county",
+    "modern": "安徽宿州市碭山縣",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "205": 4,
+     "208": 2
+    },
+    "mentions_total": 6,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.45,
+     35.23
+    ]
+   },
+   "properties": {
+    "id": "xiuwu",
+    "name": "修武",
+    "kind": "county",
+    "modern": "河南焦作市修武縣",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 1,
+     "204": 2
+    },
+    "mentions_total": 3,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.13,
+     38.05
+    ]
+   },
+   "properties": {
+    "id": "jingxing",
+    "name": "井陘",
+    "kind": "pass",
+    "modern": "河北石家莊市井陘縣",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "204": 7,
+     "208": 1
+    },
+    "mentions_total": 8,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     118.35,
+     36.85
+    ]
+   },
+   "properties": {
+    "id": "linzi",
+    "name": "臨菑",
+    "kind": "capital",
+    "modern": "山東淄博市臨淄區",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 2,
+     "206": 2
+    },
+    "mentions_total": 4,
+    "kingdom_206": "齊",
+    "king_206": "田都"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.48,
+     36.61
+    ]
+   },
+   "properties": {
+    "id": "handan",
+    "name": "邯鄲",
+    "kind": "county",
+    "modern": "河北邯鄲市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "208": 4,
+     "209": 2
+    },
+    "mentions_total": 6,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.88,
+     34.0
+    ]
+   },
+   "properties": {
+    "id": "guling",
+    "name": "固陵",
+    "kind": "county",
+    "modern": "河南周口市太康縣南（約）",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 3
+    },
+    "mentions_total": 3,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.55,
+     33.27
+    ]
+   },
+   "properties": {
+    "id": "gaixia",
+    "name": "垓下",
+    "kind": "battlefield",
+    "modern": "安徽蚌埠市固鎮縣濠城鎮",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 8
+    },
+    "mentions_total": 8,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     118.35,
+     31.86
+    ]
+   },
+   "properties": {
+    "id": "wujiang",
+    "name": "烏江",
+    "kind": "ferry",
+    "modern": "安徽馬鞍山市和縣烏江鎮",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 4
+    },
+    "mentions_total": 4,
+    "kingdom_206": null,
+    "king_206": null
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.49,
+     36.6
+    ]
+   },
+   "properties": {
+    "id": "gaonu",
+    "name": "高奴",
+    "kind": "capital",
+    "modern": "陝西延安市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 3
+    },
+    "mentions_total": 3,
+    "kingdom_206": "翟",
+    "king_206": "董翳"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     111.52,
+     36.08
+    ]
+   },
+   "properties": {
+    "id": "pingyang",
+    "name": "平陽",
+    "kind": "capital",
+    "modern": "山西臨汾市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 2
+    },
+    "mentions_total": 2,
+    "kingdom_206": "西魏",
+    "king_206": "魏豹"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.47,
+     34.15
+    ]
+   },
+   "properties": {
+    "id": "yangzhai",
+    "name": "陽翟",
+    "kind": "capital",
+    "modern": "河南禹州市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "202": 1,
+     "206": 2,
+     "207": 1
+    },
+    "mentions_total": 4,
+    "kingdom_206": "韓",
+    "king_206": "韓成"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.2,
+     35.6
+    ]
+   },
+   "properties": {
+    "id": "zhaoge",
+    "name": "朝歌",
+    "kind": "capital",
+    "modern": "河南鶴壁市淇縣",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 3
+    },
+    "mentions_total": 3,
+    "kingdom_206": "殷",
+    "king_206": "司馬卬"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.57,
+     39.84
+    ]
+   },
+   "properties": {
+    "id": "dai",
+    "name": "代",
+    "kind": "capital",
+    "modern": "河北張家口市蔚縣",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {},
+    "mentions_total": 0,
+    "kingdom_206": "代",
+    "king_206": "趙歇"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.5,
+     37.07
+    ]
+   },
+   "properties": {
+    "id": "xiangguo",
+    "name": "襄國",
+    "kind": "capital",
+    "modern": "河北邢台市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 3
+    },
+    "mentions_total": 3,
+    "kingdom_206": "常山",
+    "king_206": "張耳"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.5,
+     31.75
+    ]
+   },
+   "properties": {
+    "id": "liu",
+    "name": "六",
+    "kind": "capital",
+    "modern": "安徽六安市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {},
+    "mentions_total": 0,
+    "kingdom_206": "九江",
+    "king_206": "英布"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.87,
+     30.45
+    ]
+   },
+   "properties": {
+    "id": "zhu",
+    "name": "邾",
+    "kind": "capital",
+    "modern": "湖北黃岡市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {},
+    "mentions_total": 0,
+    "kingdom_206": "衡山",
+    "king_206": "吳芮"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     112.2,
+     30.35
+    ]
+   },
+   "properties": {
+    "id": "jiangling",
+    "name": "江陵",
+    "kind": "capital",
+    "modern": "湖北荊州市",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 3
+    },
+    "mentions_total": 3,
+    "kingdom_206": "臨江",
+    "king_206": "共敖"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.4,
+     40.05
+    ]
+   },
+   "properties": {
+    "id": "wuzhong",
+    "name": "無終",
+    "kind": "capital",
+    "modern": "天津薊州區",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 3
+    },
+    "mentions_total": 3,
+    "kingdom_206": "遼東",
+    "king_206": "韓廣"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.35,
+     39.88
+    ]
+   },
+   "properties": {
+    "id": "ji",
+    "name": "薊",
+    "kind": "capital",
+    "modern": "北京市西南",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {},
+    "mentions_total": 0,
+    "kingdom_206": "燕",
+    "king_206": "臧荼"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     119.98,
+     36.6
+    ]
+   },
+   "properties": {
+    "id": "jimo",
+    "name": "即墨",
+    "kind": "capital",
+    "modern": "山東平度市古峴鎮即墨故城",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "206": 3
+    },
+    "mentions_total": 3,
+    "kingdom_206": "膠東",
+    "king_206": "田市"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.1,
+     36.15
+    ]
+   },
+   "properties": {
+    "id": "boyang",
+    "name": "博陽",
+    "kind": "capital",
+    "modern": "山東泰安市東南",
+    "precision": "approx",
+    "chgis_id": null,
+    "mentions_by_year": {
+     "203": 2,
+     "206": 2
+    },
+    "mentions_total": 4,
+    "kingdom_206": "濟北",
+    "king_206": "田安"
+   }
+  }
+ ]
+}

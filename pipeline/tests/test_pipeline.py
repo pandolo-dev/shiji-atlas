@@ -77,6 +77,27 @@ class BuildTests(unittest.TestCase):
         route = json.loads((ROOT / "data/out/luqian_route.geojson").read_text())
         self.assertEqual(route["features"][0]["geometry"]["type"], "LineString")
 
+    def test_chgis_matches_are_near_curated_site(self):
+        from shiji_atlas import chgis
+        places = [{"id": "guangwu", "name": "廣武", "lon": 113.5, "lat": 34.9},
+                  {"id": "xingyang", "name": "滎陽", "lon": 113.4, "lat": 34.8},
+                  {"id": "feng", "name": "豐", "lon": 116.6, "lat": 34.7}]
+        rec = lambda sid, n, lon, lat, y0, y1: {"SYS_ID": sid, "NAME_FT": n, "TYPE_CH": "縣", "X_COOR": lon,  # noqa: E731
+                                                "Y_COOR": lat, "BEG_YR": y0, "END_YR": y1, "PRES_LOC": ""}
+        recs = [rec(1, "廣武縣", 112.9, 39.1, -204, 13), rec(2, "滎陽縣", 113.45, 34.82, -221, 492),
+                rec(3, "滎陽縣", 116.0, 30.0, -221, 13), rec(4, "豐縣", 116.6, 34.7, -154, 13)]
+        res = chgis.match(places, recs)
+        self.assertEqual(res["guangwu"]["status"], "rejected")
+        self.assertEqual((res["xingyang"]["status"], res["xingyang"]["sys_id"]), ("matched", 2))
+        self.assertEqual(res["feng"]["status"], "no_instance")
+
+    def test_committed_chgis_ids_are_vetted(self):
+        doc = json.loads((ROOT / "data/curated/chgis_v6.json").read_text())
+        for pid, m in doc["places"].items():
+            if m["status"] in ("matched", "adjacent"):
+                self.assertLessEqual(m["offset_km"], 50, pid)
+        self.assertNotIn("lon", doc["places"]["guangwu"])
+
 
 if __name__ == "__main__":
     unittest.main()

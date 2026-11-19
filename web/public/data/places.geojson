@@ -17,6 +17,7 @@
     "modern": "安徽宿州市埇橋區大澤鄉鎮",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "209": 4
     },
@@ -30,8 +31,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     117.08,
-     33.4
+     117.012772,
+     33.442562
     ]
    },
    "properties": {
@@ -39,8 +40,9 @@
     "name": "蘄",
     "kind": "county",
     "modern": "安徽宿州市埇橋區蘄縣鎮",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_43208",
+    "geo_note": "CHGIS V6 蘄縣（前224–13），今安徽宿县蕲县镇",
     "mentions_by_year": {
      "209": 4
     },
@@ -54,8 +56,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     114.88,
-     33.73
+     114.88245,
+     33.73398
     ]
    },
    "properties": {
@@ -63,8 +65,9 @@
     "name": "陳",
     "kind": "county",
     "modern": "河南周口市淮陽區",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_82001",
+    "geo_note": "CHGIS V6 陳縣（前479–13），今河南淮阳",
     "mentions_by_year": {
      "202": 1,
      "208": 8,
@@ -80,8 +83,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     116.88,
-     40.33
+     116.84046,
+     40.37148
     ]
    },
    "properties": {
@@ -89,8 +92,9 @@
     "name": "漁陽",
     "kind": "county",
     "modern": "北京密雲區西南",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis_adjacent",
+    "chgis_id": "hvd_211379",
+    "geo_note": "CHGIS V6 漁陽郡（前201–13），今北京市怀柔县梨园庄东南；漁陽郡治實例始於前201年，晚於切片末年一年；秦已置漁陽郡，採用其點",
     "mentions_by_year": {
      "209": 2
     },
@@ -104,8 +108,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     116.93,
-     34.73
+     116.926948,
+     34.737995
     ]
    },
    "properties": {
@@ -113,8 +117,9 @@
     "name": "沛",
     "kind": "county",
     "modern": "江蘇徐州市沛縣",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_42807",
+    "geo_note": "CHGIS V6 沛縣（前223–1264），今江苏沛县",
     "mentions_by_year": {
      "205": 5,
      "206": 1,
@@ -142,6 +147,7 @@
     "modern": "江蘇徐州市豐縣",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "V6 本時段無實例（最早 -154）",
     "mentions_by_year": {
      "202": 2,
      "208": 13,
@@ -157,8 +163,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     116.45,
-     34.17
+     116.485006,
+     34.174089
     ]
    },
    "properties": {
@@ -166,8 +172,9 @@
     "name": "碭",
     "kind": "county",
     "modern": "河南永城市芒碭山一帶",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_42792",
+    "geo_note": "CHGIS V6 碭縣（前224–13），今河南永城县东北宋楼",
     "mentions_by_year": {
      "208": 5
     },
@@ -181,8 +188,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     117.2,
-     34.8
+     117.21185,
+     34.91616
     ]
    },
    "properties": {
@@ -190,8 +197,9 @@
     "name": "薛",
     "kind": "county",
     "modern": "山東滕州市薛國故城",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_45210",
+    "geo_note": "CHGIS V6 薛縣（前220–555），今山东滕县东南官桥西南约2公里",
     "mentions_by_year": {
      "208": 6,
      "209": 1
@@ -206,8 +214,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     117.18,
-     34.27
+     117.187683,
+     34.269634
     ]
    },
    "properties": {
@@ -215,8 +223,9 @@
     "name": "彭城",
     "kind": "capital",
     "modern": "江蘇徐州市",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_42777",
+    "geo_note": "CHGIS V6 彭城縣（前223–1264），今江苏铜山县",
     "mentions_by_year": {
      "202": 1,
      "203": 2,
@@ -237,8 +246,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     120.62,
-     31.3
+     120.618622,
+     31.31271
     ]
    },
    "properties": {
@@ -246,8 +255,9 @@
     "name": "吳",
     "kind": "county",
     "modern": "江蘇蘇州市",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_40402",
+    "geo_note": "CHGIS V6 吳縣（前222–13），今江苏苏州市城区",
     "mentions_by_year": {
      "208": 1,
      "209": 6
@@ -262,8 +272,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     115.03,
-     37.07
+     114.91842,
+     36.98014
     ]
    },
    "properties": {
@@ -271,8 +281,9 @@
     "name": "鉅鹿",
     "kind": "county",
     "modern": "河北邢台市平鄉縣",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_87051",
+    "geo_note": "CHGIS V6 巨鹿縣（前221–316），今河北平乡县西南平乡",
     "mentions_by_year": {
      "207": 7,
      "208": 8
@@ -287,8 +298,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     115.57,
-     35.07
+     115.55242,
+     35.08947
     ]
    },
    "properties": {
@@ -296,8 +307,9 @@
     "name": "定陶",
     "kind": "county",
     "modern": "山東菏澤市定陶區",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_85058",
+    "geo_note": "CHGIS V6 定陶縣（前242–626），今山东定陶县西北二公里李线庄",
     "mentions_by_year": {
      "202": 6,
      "208": 12,
@@ -313,8 +325,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     116.05,
-     36.17
+     116.0467,
+     36.16054
     ]
    },
    "properties": {
@@ -322,8 +334,9 @@
     "name": "東阿",
     "kind": "county",
     "modern": "山東聊城市陽谷縣阿城鎮",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_45303",
+    "geo_note": "CHGIS V6 東阿縣（前221–974），今山东阳谷县东北阿城镇",
     "mentions_by_year": {
      "203": 1,
      "208": 8
@@ -349,6 +362,7 @@
     "modern": "河南濮陽市",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "V6 本時段無實例（最早 277）",
     "mentions_by_year": {
      "208": 6
     },
@@ -362,8 +376,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     114.62,
-     34.66
+     114.52453,
+     34.67319
     ]
    },
    "properties": {
@@ -371,8 +385,9 @@
     "name": "陳留",
     "kind": "county",
     "modern": "河南開封市祥符區陳留鎮",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_44324",
+    "geo_note": "CHGIS V6 陳留縣（前221–265），今河南开封县东南陈留镇",
     "mentions_by_year": {
      "203": 2,
      "204": 1,
@@ -389,8 +404,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     113.47,
-     34.87
+     113.53442,
+     34.87436
     ]
    },
    "properties": {
@@ -398,8 +413,9 @@
     "name": "滎陽",
     "kind": "county",
     "modern": "河南鄭州市惠濟區古滎鎮",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_44385",
+    "geo_note": "CHGIS V6 滎陽縣（前221–492），今河南郑州市西北古荥镇",
     "mentions_by_year": {
      "202": 1,
      "203": 4,
@@ -419,8 +435,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     113.23,
-     34.85
+     113.19088,
+     34.85169
     ]
    },
    "properties": {
@@ -428,8 +444,9 @@
     "name": "成皋",
     "kind": "county",
     "modern": "河南滎陽市汜水鎮",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_82439",
+    "geo_note": "CHGIS V6 成皋縣（前205–534），今河南荥阳西北虎牢关",
     "mentions_by_year": {
      "202": 3,
      "203": 13,
@@ -458,6 +475,7 @@
     "modern": "河南滎陽市敖山",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "203": 2,
      "204": 7,
@@ -486,6 +504,7 @@
     "modern": "河南滎陽市廣武山漢霸二王城",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "V6 本時段的廣武縣在今山西代縣，非滎陽北之廣武；河南廣武最早實例為 584 年",
     "mentions_by_year": {
      "203": 8,
      "204": 6,
@@ -512,6 +531,7 @@
     "modern": "河南滎陽市廣武山東（鴻溝口）",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "203": 5
     },
@@ -525,8 +545,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     112.62,
-     34.72
+     112.5963,
+     34.73157
     ]
    },
    "properties": {
@@ -534,8 +554,9 @@
     "name": "洛陽",
     "kind": "capital",
     "modern": "河南洛陽市漢魏故城",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_82826",
+    "geo_note": "CHGIS V6 雒陽縣（前249–13），今河南洛阳市东北15公里汉魏故城",
     "mentions_by_year": {
      "202": 13,
      "205": 2,
@@ -563,6 +584,7 @@
     "modern": "河南洛陽市新安縣",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "V6 本時段無實例（最早 192）",
     "mentions_by_year": {
      "203": 1,
      "206": 5
@@ -588,6 +610,7 @@
     "modern": "河南靈寶市秦函谷關",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "206": 5
     },
@@ -612,6 +635,7 @@
     "modern": "陝西商洛市丹鳳縣武關鎮",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "202": 1,
      "204": 2,
@@ -630,8 +654,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     109.32,
-     34.15
+     109.14697,
+     34.23927
     ]
    },
    "properties": {
@@ -639,8 +663,9 @@
     "name": "藍田",
     "kind": "county",
     "modern": "陝西西安市藍田縣",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_70749",
+    "geo_note": "CHGIS V6 藍田縣（前379–445），今蓝田县西三十里坝水西岸",
     "mentions_by_year": {
      "207": 3
     },
@@ -665,6 +690,7 @@
     "modern": "陝西西安市白鹿原北端",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "206": 15
     },
@@ -689,6 +715,7 @@
     "modern": "陝西西安市臨潼區新豐街道鴻門堡",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "206": 7
     },
@@ -702,8 +729,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     108.79,
-     34.38
+     108.85463,
+     34.41219
     ]
    },
    "properties": {
@@ -711,8 +738,9 @@
     "name": "咸陽",
     "kind": "capital",
     "modern": "陝西咸陽市渭城區窯店秦咸陽城遺址",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_70685",
+    "geo_note": "CHGIS V6 咸陽縣（前350–前207），今陕西咸阳渭城区窑店镇",
     "mentions_by_year": {
      "204": 1,
      "206": 16,
@@ -730,8 +758,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     109.25,
-     34.66
+     109.31063,
+     34.6105
     ]
    },
    "properties": {
@@ -739,8 +767,9 @@
     "name": "櫟陽",
     "kind": "capital",
     "modern": "陝西西安市閻良區武屯櫟陽城遺址",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_70638",
+    "geo_note": "CHGIS V6 櫟陽縣（前383–前201），今陕西西安市阎良区武屯镇官庄村与古城屯村",
     "mentions_by_year": {
      "203": 5,
      "205": 4,
@@ -767,6 +796,7 @@
     "modern": "陝西興平市東南",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "V6 無同名記錄",
     "mentions_by_year": {
      "205": 6,
      "206": 6
@@ -781,8 +811,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     107.15,
-     34.37
+     107.27861,
+     34.36926
     ]
    },
    "properties": {
@@ -790,8 +820,9 @@
     "name": "陳倉",
     "kind": "county",
     "modern": "陝西寶雞市陳倉區",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_70920",
+    "geo_note": "CHGIS V6 陳倉縣（前221–315），今陕西宝鸡市东二十里渭水北",
     "mentions_by_year": {
      "206": 2
     },
@@ -805,8 +836,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     107.03,
-     33.07
+     107.036067,
+     33.072893
     ]
    },
    "properties": {
@@ -814,8 +845,9 @@
     "name": "南鄭",
     "kind": "capital",
     "modern": "陝西漢中市",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_211670",
+    "geo_note": "CHGIS V6 漢中郡（前312–前201），今陕西省汉中市治东",
     "mentions_by_year": {
      "204": 1,
      "206": 14,
@@ -831,8 +863,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     112.53,
-     33.0
+     112.53547,
+     33.00168
     ]
    },
    "properties": {
@@ -840,8 +872,9 @@
     "name": "宛",
     "kind": "county",
     "modern": "河南南陽市",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_82610",
+    "geo_note": "CHGIS V6 宛縣（前272–13），今河南南阳市",
     "mentions_by_year": {
      "203": 1,
      "207": 9
@@ -867,6 +900,7 @@
     "modern": "安徽宿州市靈璧縣一帶",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "202": 1,
      "205": 3
@@ -881,8 +915,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     116.33,
-     34.45
+     116.340248,
+     34.427879
     ]
    },
    "properties": {
@@ -890,8 +924,9 @@
     "name": "下邑",
     "kind": "county",
     "modern": "安徽宿州市碭山縣",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_42854",
+    "geo_note": "CHGIS V6 下邑縣（前223–13），今安徽砀山县",
     "mentions_by_year": {
      "205": 4,
      "208": 2
@@ -906,8 +941,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     113.45,
-     35.23
+     113.66022,
+     35.26813
     ]
    },
    "properties": {
@@ -915,8 +950,9 @@
     "name": "修武",
     "kind": "county",
     "modern": "河南焦作市修武縣",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_82265",
+    "geo_note": "CHGIS V6 修武縣（前221–625），今河南获嘉",
     "mentions_by_year": {
      "203": 1,
      "204": 2
@@ -931,8 +967,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     114.13,
-     38.05
+     114.04595,
+     38.19603
     ]
    },
    "properties": {
@@ -940,8 +976,9 @@
     "name": "井陘",
     "kind": "pass",
     "modern": "河北石家莊市井陘縣",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_87093",
+    "geo_note": "CHGIS V6 井陘縣（前221–316），今井陉县西北北陉、南陉一带",
     "mentions_by_year": {
      "204": 7,
      "208": 1
@@ -956,8 +993,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     118.35,
-     36.85
+     118.37041,
+     36.86401
     ]
    },
    "properties": {
@@ -965,8 +1002,9 @@
     "name": "臨菑",
     "kind": "capital",
     "modern": "山東淄博市臨淄區",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_85232",
+    "geo_note": "CHGIS V6 臨淄縣（前221–13），今山东淄博市临淄区北东、西古城",
     "mentions_by_year": {
      "203": 2,
      "206": 2
@@ -981,8 +1019,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     114.48,
-     36.61
+     114.47204,
+     36.59347
     ]
    },
    "properties": {
@@ -990,8 +1028,9 @@
     "name": "邯鄲",
     "kind": "county",
     "modern": "河北邯鄲市",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_87010",
+    "geo_note": "CHGIS V6 邯鄲縣（前221–316），今河北邯郸市",
     "mentions_by_year": {
      "208": 4,
      "209": 2
@@ -1017,6 +1056,7 @@
     "modern": "河南周口市太康縣南（約）",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "202": 3
     },
@@ -1041,6 +1081,7 @@
     "modern": "安徽蚌埠市固鎮縣濠城鎮",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "202": 8
     },
@@ -1065,6 +1106,7 @@
     "modern": "安徽馬鞍山市和縣烏江鎮",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "非行政治所，V6 行政點層不覆蓋",
     "mentions_by_year": {
      "202": 4
     },
@@ -1089,6 +1131,7 @@
     "modern": "陝西延安市",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "V6 無同名記錄",
     "mentions_by_year": {
      "206": 3
     },
@@ -1113,6 +1156,7 @@
     "modern": "山西臨汾市",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "V6 本時段無實例（最早 23）",
     "mentions_by_year": {
      "206": 2
     },
@@ -1126,8 +1170,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     113.47,
-     34.15
+     113.46706,
+     34.16249
     ]
    },
    "properties": {
@@ -1135,8 +1179,9 @@
     "name": "陽翟",
     "kind": "capital",
     "modern": "河南禹州市",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_82453",
+    "geo_note": "CHGIS V6 陽翟縣（前230–13），今河南禹州市",
     "mentions_by_year": {
      "202": 1,
      "206": 2,
@@ -1152,8 +1197,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     114.2,
-     35.6
+     114.19437,
+     35.60645
     ]
    },
    "properties": {
@@ -1161,8 +1206,9 @@
     "name": "朝歌",
     "kind": "capital",
     "modern": "河南鶴壁市淇縣",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_82267",
+    "geo_note": "CHGIS V6 朝歌縣（前221–13），今河南淇县",
     "mentions_by_year": {
      "206": 3
     },
@@ -1176,8 +1222,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     114.57,
-     39.84
+     114.672124,
+     39.890668
     ]
    },
    "properties": {
@@ -1185,8 +1231,9 @@
     "name": "代",
     "kind": "capital",
     "modern": "河北張家口市蔚縣",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_87415",
+    "geo_note": "CHGIS V6 代郡（前221–13），今河北蔚县东北代王城镇",
     "mentions_by_year": {},
     "mentions_total": 0,
     "kingdom_206": "代",
@@ -1198,8 +1245,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     114.5,
-     37.07
+     114.49426,
+     37.06636
     ]
    },
    "properties": {
@@ -1207,8 +1254,9 @@
     "name": "襄國",
     "kind": "capital",
     "modern": "河北邢台市",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_200022",
+    "geo_note": "CHGIS V6 襄國縣（前203–588），今河北邢台市市区",
     "mentions_by_year": {
      "206": 3
     },
@@ -1222,8 +1270,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     116.5,
-     31.75
+     116.517601,
+     31.820169
     ]
    },
    "properties": {
@@ -1231,8 +1279,9 @@
     "name": "六",
     "kind": "capital",
     "modern": "安徽六安市",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_43135",
+    "geo_note": "CHGIS V6 六縣（前223–29），今安徽六安市治北",
     "mentions_by_year": {},
     "mentions_total": 0,
     "kingdom_206": "九江",
@@ -1244,8 +1293,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     114.87,
-     30.45
+     114.84357,
+     30.48668
     ]
    },
    "properties": {
@@ -1253,8 +1302,9 @@
     "name": "邾",
     "kind": "capital",
     "modern": "湖北黃岡市",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_43506",
+    "geo_note": "CHGIS V6 邾縣（前221–338），今湖北黄冈县西北十里",
     "mentions_by_year": {},
     "mentions_total": 0,
     "kingdom_206": "衡山",
@@ -1266,8 +1316,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     112.2,
-     30.35
+     112.19077,
+     30.35044
     ]
    },
    "properties": {
@@ -1275,8 +1325,9 @@
     "name": "江陵",
     "kind": "capital",
     "modern": "湖北荊州市",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_43674",
+    "geo_note": "CHGIS V6 江陵縣（前278–13），今湖北江陵县",
     "mentions_by_year": {
      "206": 3
     },
@@ -1301,6 +1352,7 @@
     "modern": "天津薊州區",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "V6 無同名記錄",
     "mentions_by_year": {
      "206": 3
     },
@@ -1325,6 +1377,7 @@
     "modern": "北京市西南",
     "precision": "approx",
     "chgis_id": null,
+    "geo_note": "V6 無同名記錄",
     "mentions_by_year": {},
     "mentions_total": 0,
     "kingdom_206": "燕",
@@ -1336,8 +1389,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     119.98,
-     36.6
+     120.26362,
+     36.71144
     ]
    },
    "properties": {
@@ -1345,8 +1398,9 @@
     "name": "即墨",
     "kind": "capital",
     "modern": "山東平度市古峴鎮即墨故城",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_85455",
+    "geo_note": "CHGIS V6 即墨縣（前221–13），今山东平度市东南大朱毛",
     "mentions_by_year": {
      "206": 3
     },
@@ -1360,8 +1414,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     117.1,
-     36.15
+     117.19949,
+     36.10761
     ]
    },
    "properties": {
@@ -1369,8 +1423,9 @@
     "name": "博陽",
     "kind": "capital",
     "modern": "山東泰安市東南",
-    "precision": "approx",
-    "chgis_id": null,
+    "precision": "chgis",
+    "chgis_id": "hvd_85652",
+    "geo_note": "CHGIS V6 博陽縣（前221–前188），今山东泰安市东南旧县",
     "mentions_by_year": {
      "203": 2,
      "206": 2

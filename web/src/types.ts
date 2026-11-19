@@ -22,7 +22,7 @@ export interface Passage {
 }
 
 export interface PlaceProps {
-  id: string; name: string; kind: string; modern: string; precision: string; chgis_id: string | null
+  id: string; name: string; kind: string; modern: string; precision: string; chgis_id: string | null; geo_note: string
   mentions_by_year: Record<string, number>; mentions_total: number
   kingdom_206: string | null; king_206: string | null
 }

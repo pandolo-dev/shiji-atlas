@@ -35,3 +35,9 @@ export function reignYear(yearBce: number): string {
 export function dateLabel(yearBce: number, month: number | null): string {
   return `前${yearBce}年 · ${reignYear(yearBce)}${monthName(month)}`
 }
+
+const PRECISION: Record<string, string> = { chgis: 'CHGIS V6', chgis_adjacent: 'CHGIS V6（鄰近年份）', approx: '估計' }
+
+export function precisionLabel(p: string): string {
+  return PRECISION[p] ?? p
+}

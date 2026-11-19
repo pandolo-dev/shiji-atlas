@@ -43,50 +43,84 @@ def snippet(text: str, kw: str, before: int = 30, after: int = 70) -> str:
     return ("…" if s else "") + text[s:e].replace("\n", "") + ("…" if e < len(text) else "")
 
 
+CARRIED_WINDOW = 1  # years an event may differ from the running year to re-date a carried paragraph
+
+
+def matches(ev: dict, p) -> bool:
+    return all(k in p.text for k in ev["keywords"])
+
+
+def date_shiji(events: list[dict], passages: list) -> None:
+    """Date carried 史記 paragraphs in strict document order.
+
+    A carried paragraph inherits the running year (its preceding dated paragraph).
+    It is re-dated to an event it mentions only if that event is listed for it in
+    events.json "passages", or it lies within CARRIED_WINDOW of the running year
+    and between the running year and the next marker (if any). Rejected matches are flagged.
+    """
+    for juan in sorted({p.juan for p in passages if p.work == "史記"}):
+        seq = [p for p in passages if p.work == "史記" and p.juan == juan]
+        nxt: list[int | None] = [None] * len(seq)
+        for i in range(len(seq) - 2, -1, -1):
+            q = seq[i + 1]
+            nxt[i] = q.year_bce if q.date_source == "marker" else nxt[i + 1]
+        run_year, run_label = None, ""
+        for i, p in enumerate(seq):
+            if p.date_source == "marker":
+                run_year, run_label = p.year_bce, p.year_label
+                continue
+            p.year_bce, p.year_label = run_year, run_label
+            if p.kind != "narrative":
+                continue
+            allow = [e for e in events if p.id in e.get("passages", [])]
+            cands = allow or [e for e in events
+                              if abs(e["year_bce"] - run_year) <= CARRIED_WINDOW and matches(e, p)]
+            lo, hi = sorted((run_year, nxt[i])) if nxt[i] is not None else (-9999, 9999)
+            ok = allow or [e for e in cands if lo <= e["year_bce"] <= hi]
+            if cands and not ok:
+                p.date_flag = "anchor_rejected(" + "、".join(e["id"] for e in cands) + ")"
+            if ok:
+                ev = min(ok, key=lambda e: (abs(e["year_bce"] - run_year), e["sort_key"]))
+                p.year_bce = run_year = ev["year_bce"]
+                p.year_label = run_label = f"{p.year_label.split('·')[0]}·繫於「{ev['title']}」"
+                p.date_source = "event_allowlist" if allow else "event_keyword"
+
+
 def link_events(events: list[dict], passages: list) -> None:
+    """Cite narrative passages that contain all of an event's keywords.
+
+    資治通鑑 must match the event year, 史記 (dated by date_shiji) may be off by
+    CARRIED_WINDOW; ids in an event's "passages" are cited regardless.
+    """
     for ev in events:
+        allow = set(ev.get("passages", []))
         cites = []
         for p in passages:
             if p.kind != "narrative":
                 continue
-            # 史記 paragraphs without their own year marker carry the previous
-            # marker's year, which drifts; match those on keywords alone.
-            if p.date_source == "carried":
-                slack = None
-            else:
-                slack = 0 if p.work == "資治通鑑" else 1
-            if slack is not None and abs(p.year_bce - ev["year_bce"]) > slack:
-                continue
-            if all(k in p.text for k in ev["keywords"]):
-                cites.append({"passage_id": p.id, "work": p.work, "juan": p.juan,
+            slack = 0 if p.work == "資治通鑑" else CARRIED_WINDOW
+            if p.id in allow or (abs(p.year_bce - ev["year_bce"]) <= slack and matches(ev, p)):
+                cites.append({"passage_id": p.id, "work": p.work, "juan": p.juan, "year_bce": p.year_bce,
                               "year_label": p.year_label, "snippet": snippet(p.text, ev["keywords"][0])})
         ev["citations"] = cites
-        ev["sort_key"] = sort_key(ev["year_bce"], ev["month"])
 
 
-def anchor_carried(events: list[dict], passages: list) -> None:
-    """Re-date carried 史記 paragraphs by the (earliest) event they cite."""
-    by_passage: dict[str, dict] = {}
-    for ev in sorted(events, key=lambda e: sort_key(e["year_bce"], e["month"])):
-        for c in ev["citations"]:
-            by_passage.setdefault(c["passage_id"], ev)
-    for p in passages:
-        ev = by_passage.get(p.id)
-        if p.date_source == "carried" and ev:
-            p.year_bce = ev["year_bce"]
-            p.date_source = "event"
-    # Carry forward again from the nearest dated paragraph in the same chapter.
-    last: dict[int, int] = {}
-    for p in passages:
-        if p.work != "史記":
-            continue
-        if p.date_source == "carried" and p.juan in last:
-            p.year_bce = min(p.year_bce, last[p.juan])
-        else:
-            last[p.juan] = p.year_bce
-    for ev in events:
-        for c in ev["citations"]:
-            c["year_bce"] = next(p.year_bce for p in passages if p.id == c["passage_id"])
+def flag_contradictions(passages: list) -> list:
+    """Flag non-marker 史記 paragraphs dated outside the years of their marker-dated neighbours."""
+    flagged = []
+    for juan in sorted({p.juan for p in passages if p.work == "史記"}):
+        seq = [p for p in passages if p.work == "史記" and p.juan == juan and p.kind == "narrative"]
+        for i, p in enumerate(seq):
+            if p.date_source == "marker" or p.date_flag:
+                continue
+            before = next((q.year_bce for q in reversed(seq[:i]) if q.date_source == "marker"), None)
+            after = next((q.year_bce for q in seq[i + 1:] if q.date_source == "marker"), None)
+            if before is None or after is None:
+                continue
+            if not min(before, after) <= p.year_bce <= max(before, after):
+                p.date_flag = f"contradicts_neighbors({before},{after})"
+                flagged.append(p)
+    return flagged
 
 
 def point(place, props: dict) -> dict:
@@ -230,8 +264,12 @@ def main(argv=None) -> int:
         e["sort_key"] = sort_key(e["year_bce"], e["month"])
 
     passages = load_passages(gaz)
+    for ev in events:
+        ev["sort_key"] = sort_key(ev["year_bce"], ev["month"])
+    date_shiji(events, passages)
     link_events(events, passages)
-    anchor_carried(events, passages)
+    for p in flag_contradictions(passages):
+        print(f"WARN {p.id} dated {p.year_bce} ({p.date_source}): {p.date_flag}", file=sys.stderr)
     passages = [p for p in passages if in_slice(p)]
     errors = validate(gaz, events, ledger)
     for err in errors:
@@ -254,6 +292,8 @@ def main(argv=None) -> int:
     tj = sum(p.work == "資治通鑑" for p in passages)
     carried = sum(p.date_source == "carried" for p in passages)
     print(f"史記 paragraphs dated only by carry-forward: {carried}")
+    print(f"史記 paragraphs re-dated by event keyword: {sum(p.date_source == 'event_keyword' for p in passages)}")
+    print(f"史記 paragraphs flagged: {sum(bool(p.date_flag) for p in passages)}")
     print(f"passages: {len(passages)} (資治通鑑 {tj}, 史記 {len(passages) - tj})")
     print(f"events: {len(events)}, citations: {sum(len(e['citations']) for e in events)}")
     print(f"places mentioned: {sum(1 for p in places_geojson(gaz, passages, kingdoms)['features'] if p['properties']['mentions_total'])}/{len(gaz.places)}")

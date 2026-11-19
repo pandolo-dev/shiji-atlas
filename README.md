@@ -31,13 +31,16 @@ cd web && npm install && npm run dev
 1. **Cleaning** (`wikitext.py`): strips `<ref>` notes, templates (`{{另|熒|滎}}` keeps the 2nd reading), `-{…}-` conversions, wiki links.
 2. **資治通鑑** (`tongjian.py`): year headings `=== 高帝元年（乙未，公元前二〇六年） ===` → `year_bce`, `ganzhi`; numbered entries `'''N'''`; `::` lines (臣光曰, 賈誼論…) become `commentary` passages.
 3. **史記** (`shiji.py`): no headings, so years come from inline markers (`秦二世元年`, `漢之二年`, bare `三年` once in the Han era). Each paragraph gets a `date_source`:
-   - `marker`: has its own year marker
-   - `event`: re-dated from the curated event it cites
-   - `carried`: inherits the previous paragraph's year (least reliable)
+   - `marker`: opens with its own year marker. Paragraphs are split before any later marker, so ids like `sj-007-024a` and `sj-007-024b` are one source paragraph.
+   - `event_keyword`: re-dated to an event whose keywords it contains. The event's year must be within ±1 of the running year and between the running year and the next marker.
+   - `event_allowlist`: re-dated by an explicit `passages` list in `events.json`.
+   - `carried`: inherits the immediately preceding dated paragraph's year, in strict document order (least reliable).
+
+   A keyword match that is rejected, or a year that falls outside both marker-dated neighbours, sets `date_flag` and prints a warning during the build.
 
    `太史公曰` / `褚先生曰` and everything after them is marked as `commentary`.
 4. **Places** (`gazetteer.py`): longest-alias-first matching. One-character names (陳, 沛, 豐, 薛, 宛) only count when preceded by a locative verb/preposition (至陳, 攻豐…) and not followed by an excluded char (陳勝, 沛公).
-5. **Events** (`build.py`): each curated event has keywords. It is linked to every passage in the same year that contains all of them. Missing 資治通鑑 citations fail the build.
+5. **Events** (`build.py`): each curated event has keywords. It is linked to every passage that contains all of them and is in the same year (資治通鑑) or within ±1 year (史記). Missing 資治通鑑 citations fail the build.
 
 ## Caveats
 

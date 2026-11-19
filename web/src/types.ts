@@ -18,7 +18,7 @@ export interface HistEvent {
 
 export interface Passage {
   id: string; work: string; juan: number; year_bce: number; year_label: string; entry_no: number
-  kind: 'narrative' | 'commentary'; text: string; months: number[]; places: Record<string, number>; date_source: string
+  kind: 'narrative' | 'commentary'; text: string; months: number[]; places: Record<string, number>; date_source: string; date_flag: string
 }
 
 export interface PlaceProps {

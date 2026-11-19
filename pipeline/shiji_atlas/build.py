@@ -268,8 +268,10 @@ def main(argv=None) -> int:
         ev["sort_key"] = sort_key(ev["year_bce"], ev["month"])
     date_shiji(events, passages)
     link_events(events, passages)
-    for p in flag_contradictions(passages):
-        print(f"WARN {p.id} dated {p.year_bce} ({p.date_source}): {p.date_flag}", file=sys.stderr)
+    flag_contradictions(passages)
+    for p in passages:
+        if p.date_flag:
+            print(f"WARN {p.id} dated {p.year_bce} ({p.date_source}): {p.date_flag}", file=sys.stderr)
     passages = [p for p in passages if in_slice(p)]
     errors = validate(gaz, events, ledger)
     for err in errors:

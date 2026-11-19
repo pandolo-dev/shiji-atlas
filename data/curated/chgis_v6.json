@@ -1,0 +1,638 @@
+{
+ "source": "CHGIS, Version 6. (c) Fairbank Center for Chinese Studies of Harvard University and the Center for Historical Geographical Studies at Fudan University, 2016.",
+ "layers": [
+  "v6_time_cnty_pts_utf_wgs84",
+  "v6_time_pref_pts_utf_wgs84"
+ ],
+ "filter": "BEG_YR <= -202 AND END_YR >= -209",
+ "places": {
+  "dazexiang": {
+   "name": "大澤鄉",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "qi": {
+   "name": "蘄",
+   "status": "matched",
+   "sys_id": 43208,
+   "name_ft": "蘄縣",
+   "type": "县",
+   "years": [
+    -224,
+    13
+   ],
+   "lon": 117.012772,
+   "lat": 33.442562,
+   "pres_loc": "安徽宿县蕲县镇",
+   "offset_km": 7.8
+  },
+  "chen": {
+   "name": "陳",
+   "status": "matched",
+   "sys_id": 82001,
+   "name_ft": "陳縣",
+   "type": "县",
+   "years": [
+    -479,
+    13
+   ],
+   "lon": 114.88245,
+   "lat": 33.73398,
+   "pres_loc": "今河南淮阳",
+   "offset_km": 0.5
+  },
+  "yuyang": {
+   "name": "漁陽",
+   "status": "adjacent",
+   "reason": "漁陽郡治實例始於前201年，晚於切片末年一年；秦已置漁陽郡，採用其點",
+   "sys_id": 211379,
+   "name_ft": "漁陽郡",
+   "type": "郡",
+   "years": [
+    -201,
+    13
+   ],
+   "lon": 116.84046,
+   "lat": 40.37148,
+   "pres_loc": "今北京市怀柔县梨园庄东南",
+   "offset_km": 5.7
+  },
+  "pei": {
+   "name": "沛",
+   "status": "matched",
+   "sys_id": 42807,
+   "name_ft": "沛縣",
+   "type": "县",
+   "years": [
+    -223,
+    1264
+   ],
+   "lon": 116.926948,
+   "lat": 34.737995,
+   "pres_loc": "江苏沛县",
+   "offset_km": 0.9
+  },
+  "feng": {
+   "name": "豐",
+   "status": "no_instance",
+   "reason": "V6 本時段無實例（最早 -154）"
+  },
+  "dang": {
+   "name": "碭",
+   "status": "matched",
+   "sys_id": 42792,
+   "name_ft": "碭縣",
+   "type": "县",
+   "years": [
+    -224,
+    13
+   ],
+   "lon": 116.485006,
+   "lat": 34.174089,
+   "pres_loc": "河南永城县东北宋楼",
+   "offset_km": 3.3
+  },
+  "xue": {
+   "name": "薛",
+   "status": "matched",
+   "sys_id": 45210,
+   "name_ft": "薛縣",
+   "type": "县",
+   "years": [
+    -220,
+    555
+   ],
+   "lon": 117.21185,
+   "lat": 34.91616,
+   "pres_loc": "今山东滕县东南官桥西南约2公里",
+   "offset_km": 13.0
+  },
+  "pengcheng": {
+   "name": "彭城",
+   "status": "matched",
+   "sys_id": 42777,
+   "name_ft": "彭城縣",
+   "type": "县",
+   "years": [
+    -223,
+    1264
+   ],
+   "lon": 117.187683,
+   "lat": 34.269634,
+   "pres_loc": "江苏铜山县",
+   "offset_km": 0.7
+  },
+  "wu": {
+   "name": "吳",
+   "status": "matched",
+   "sys_id": 40402,
+   "name_ft": "吳縣",
+   "type": "县",
+   "years": [
+    -222,
+    13
+   ],
+   "lon": 120.618622,
+   "lat": 31.31271,
+   "pres_loc": "今江苏苏州市城区",
+   "offset_km": 1.4
+  },
+  "julu": {
+   "name": "鉅鹿",
+   "status": "matched",
+   "sys_id": 87051,
+   "name_ft": "巨鹿縣",
+   "type": "县",
+   "years": [
+    -221,
+    316
+   ],
+   "lon": 114.91842,
+   "lat": 36.98014,
+   "pres_loc": "今河北平乡县西南平乡",
+   "offset_km": 14.1
+  },
+  "dingtao": {
+   "name": "定陶",
+   "status": "matched",
+   "sys_id": 85058,
+   "name_ft": "定陶縣",
+   "type": "县",
+   "years": [
+    -242,
+    626
+   ],
+   "lon": 115.55242,
+   "lat": 35.08947,
+   "pres_loc": "今山东定陶县西北二公里李线庄",
+   "offset_km": 2.7
+  },
+  "donge": {
+   "name": "東阿",
+   "status": "matched",
+   "sys_id": 45303,
+   "name_ft": "東阿縣",
+   "type": "县",
+   "years": [
+    -221,
+    974
+   ],
+   "lon": 116.0467,
+   "lat": 36.16054,
+   "pres_loc": "今山东阳谷县东北阿城镇",
+   "offset_km": 1.1
+  },
+  "puyang": {
+   "name": "濮陽",
+   "status": "no_instance",
+   "reason": "V6 本時段無實例（最早 277）"
+  },
+  "chenliu": {
+   "name": "陳留",
+   "status": "matched",
+   "sys_id": 44324,
+   "name_ft": "陳留縣",
+   "type": "县",
+   "years": [
+    -221,
+    265
+   ],
+   "lon": 114.52453,
+   "lat": 34.67319,
+   "pres_loc": "今河南开封县东南陈留镇",
+   "offset_km": 8.9
+  },
+  "xingyang": {
+   "name": "滎陽",
+   "status": "matched",
+   "sys_id": 44385,
+   "name_ft": "滎陽縣",
+   "type": "县",
+   "years": [
+    -221,
+    492
+   ],
+   "lon": 113.53442,
+   "lat": 34.87436,
+   "pres_loc": "今河南郑州市西北古荥镇",
+   "offset_km": 5.9
+  },
+  "chenggao": {
+   "name": "成皋",
+   "status": "matched",
+   "sys_id": 82439,
+   "name_ft": "成皋縣",
+   "type": "县",
+   "years": [
+    -205,
+    534
+   ],
+   "lon": 113.19088,
+   "lat": 34.85169,
+   "pres_loc": "今河南荥阳西北虎牢关",
+   "offset_km": 3.6
+  },
+  "aocang": {
+   "name": "敖倉",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "guangwu": {
+   "name": "廣武",
+   "status": "rejected",
+   "reason": "V6 本時段的廣武縣在今山西代縣，非滎陽北之廣武；河南廣武最早實例為 584 年",
+   "sys_id": 95094,
+   "offset_km": 459.6
+  },
+  "honggou": {
+   "name": "鴻溝",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "luoyang": {
+   "name": "洛陽",
+   "status": "matched",
+   "sys_id": 82826,
+   "name_ft": "雒陽縣",
+   "type": "县",
+   "years": [
+    -249,
+    13
+   ],
+   "lon": 112.5963,
+   "lat": 34.73157,
+   "pres_loc": "今河南洛阳市东北15公里汉魏故城",
+   "offset_km": 2.5
+  },
+  "xinan": {
+   "name": "新安",
+   "status": "no_instance",
+   "reason": "V6 本時段無實例（最早 192）"
+  },
+  "hangu": {
+   "name": "函谷關",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "wuguan": {
+   "name": "武關",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "lantian": {
+   "name": "藍田",
+   "status": "matched",
+   "sys_id": 70749,
+   "name_ft": "藍田縣",
+   "type": "县",
+   "years": [
+    -379,
+    445
+   ],
+   "lon": 109.14697,
+   "lat": 34.23927,
+   "pres_loc": "今蓝田县西三十里坝水西岸",
+   "offset_km": 18.8
+  },
+  "bashang": {
+   "name": "霸上",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "hongmen": {
+   "name": "鴻門",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "xianyang": {
+   "name": "咸陽",
+   "status": "matched",
+   "sys_id": 70685,
+   "name_ft": "咸陽縣",
+   "type": "县",
+   "years": [
+    -350,
+    -207
+   ],
+   "lon": 108.85463,
+   "lat": 34.41219,
+   "pres_loc": "今陕西咸阳渭城区窑店镇",
+   "offset_km": 6.9
+  },
+  "yueyang": {
+   "name": "櫟陽",
+   "status": "matched",
+   "sys_id": 70638,
+   "name_ft": "櫟陽縣",
+   "type": "县",
+   "years": [
+    -383,
+    -201
+   ],
+   "lon": 109.31063,
+   "lat": 34.6105,
+   "pres_loc": "今陕西西安市阎良区武屯镇官庄村与古城屯村",
+   "offset_km": 7.8
+  },
+  "feiqiu": {
+   "name": "廢丘",
+   "status": "no_instance",
+   "reason": "V6 無同名記錄"
+  },
+  "chencang": {
+   "name": "陳倉",
+   "status": "matched",
+   "sys_id": 70920,
+   "name_ft": "陳倉縣",
+   "type": "县",
+   "years": [
+    -221,
+    315
+   ],
+   "lon": 107.27861,
+   "lat": 34.36926,
+   "pres_loc": "今陕西宝鸡市东二十里渭水北",
+   "offset_km": 11.8
+  },
+  "nanzheng": {
+   "name": "南鄭",
+   "status": "matched",
+   "sys_id": 211670,
+   "name_ft": "漢中郡",
+   "type": "郡",
+   "years": [
+    -312,
+    -201
+   ],
+   "lon": 107.036067,
+   "lat": 33.072893,
+   "pres_loc": "今陕西省汉中市治东",
+   "offset_km": 0.7
+  },
+  "wan": {
+   "name": "宛",
+   "status": "matched",
+   "sys_id": 82610,
+   "name_ft": "宛縣",
+   "type": "县",
+   "years": [
+    -272,
+    13
+   ],
+   "lon": 112.53547,
+   "lat": 33.00168,
+   "pres_loc": "今河南南阳市",
+   "offset_km": 0.5
+  },
+  "lingbi": {
+   "name": "靈壁",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "xiayi": {
+   "name": "下邑",
+   "status": "matched",
+   "sys_id": 42854,
+   "name_ft": "下邑縣",
+   "type": "县",
+   "years": [
+    -223,
+    13
+   ],
+   "lon": 116.340248,
+   "lat": 34.427879,
+   "pres_loc": "安徽砀山县",
+   "offset_km": 2.6
+  },
+  "xiuwu": {
+   "name": "修武",
+   "status": "matched",
+   "sys_id": 82265,
+   "name_ft": "修武縣",
+   "type": "县",
+   "years": [
+    -221,
+    625
+   ],
+   "lon": 113.66022,
+   "lat": 35.26813,
+   "pres_loc": "今河南获嘉",
+   "offset_km": 19.6
+  },
+  "jingxing": {
+   "name": "井陘",
+   "status": "matched",
+   "sys_id": 87093,
+   "name_ft": "井陘縣",
+   "type": "县",
+   "years": [
+    -221,
+    316
+   ],
+   "lon": 114.04595,
+   "lat": 38.19603,
+   "pres_loc": "今井陉县西北北陉、南陉一带",
+   "offset_km": 17.8
+  },
+  "linzi": {
+   "name": "臨菑",
+   "status": "matched",
+   "sys_id": 85232,
+   "name_ft": "臨淄縣",
+   "type": "县",
+   "years": [
+    -221,
+    13
+   ],
+   "lon": 118.37041,
+   "lat": 36.86401,
+   "pres_loc": "今山东淄博市临淄区北东、西古城",
+   "offset_km": 2.4
+  },
+  "handan": {
+   "name": "邯鄲",
+   "status": "matched",
+   "sys_id": 87010,
+   "name_ft": "邯鄲縣",
+   "type": "县",
+   "years": [
+    -221,
+    316
+   ],
+   "lon": 114.47204,
+   "lat": 36.59347,
+   "pres_loc": "今河北邯郸市",
+   "offset_km": 2.0
+  },
+  "guling": {
+   "name": "固陵",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "gaixia": {
+   "name": "垓下",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "wujiang": {
+   "name": "烏江",
+   "status": "non_admin",
+   "reason": "非行政治所，V6 行政點層不覆蓋"
+  },
+  "gaonu": {
+   "name": "高奴",
+   "status": "no_instance",
+   "reason": "V6 無同名記錄"
+  },
+  "pingyang": {
+   "name": "平陽",
+   "status": "no_instance",
+   "reason": "V6 本時段無實例（最早 23）"
+  },
+  "yangzhai": {
+   "name": "陽翟",
+   "status": "matched",
+   "sys_id": 82453,
+   "name_ft": "陽翟縣",
+   "type": "县",
+   "years": [
+    -230,
+    13
+   ],
+   "lon": 113.46706,
+   "lat": 34.16249,
+   "pres_loc": "今河南禹州市",
+   "offset_km": 1.4
+  },
+  "zhaoge": {
+   "name": "朝歌",
+   "status": "matched",
+   "sys_id": 82267,
+   "name_ft": "朝歌縣",
+   "type": "县",
+   "years": [
+    -221,
+    13
+   ],
+   "lon": 114.19437,
+   "lat": 35.60645,
+   "pres_loc": "今河南淇县",
+   "offset_km": 0.9
+  },
+  "dai": {
+   "name": "代",
+   "status": "matched",
+   "sys_id": 87415,
+   "name_ft": "代郡",
+   "type": "郡",
+   "years": [
+    -221,
+    13
+   ],
+   "lon": 114.672124,
+   "lat": 39.890668,
+   "pres_loc": "今河北蔚县东北代王城镇",
+   "offset_km": 10.4
+  },
+  "xiangguo": {
+   "name": "襄國",
+   "status": "matched",
+   "sys_id": 200022,
+   "name_ft": "襄國縣",
+   "type": "县",
+   "years": [
+    -203,
+    588
+   ],
+   "lon": 114.49426,
+   "lat": 37.06636,
+   "pres_loc": "今河北邢台市市区",
+   "offset_km": 0.7
+  },
+  "liu": {
+   "name": "六",
+   "status": "matched",
+   "sys_id": 43135,
+   "name_ft": "六縣",
+   "type": "县",
+   "years": [
+    -223,
+    29
+   ],
+   "lon": 116.517601,
+   "lat": 31.820169,
+   "pres_loc": "安徽六安市治北",
+   "offset_km": 8.0
+  },
+  "zhu": {
+   "name": "邾",
+   "status": "matched",
+   "sys_id": 43506,
+   "name_ft": "邾縣",
+   "type": "县",
+   "years": [
+    -221,
+    338
+   ],
+   "lon": 114.84357,
+   "lat": 30.48668,
+   "pres_loc": "今湖北黄冈县西北十里",
+   "offset_km": 4.8
+  },
+  "jiangling": {
+   "name": "江陵",
+   "status": "matched",
+   "sys_id": 43674,
+   "name_ft": "江陵縣",
+   "type": "县",
+   "years": [
+    -278,
+    13
+   ],
+   "lon": 112.19077,
+   "lat": 30.35044,
+   "pres_loc": "今湖北江陵县",
+   "offset_km": 0.9
+  },
+  "wuzhong": {
+   "name": "無終",
+   "status": "no_instance",
+   "reason": "V6 無同名記錄"
+  },
+  "ji": {
+   "name": "薊",
+   "status": "no_instance",
+   "reason": "V6 無同名記錄"
+  },
+  "jimo": {
+   "name": "即墨",
+   "status": "matched",
+   "sys_id": 85455,
+   "name_ft": "即墨縣",
+   "type": "县",
+   "years": [
+    -221,
+    13
+   ],
+   "lon": 120.26362,
+   "lat": 36.71144,
+   "pres_loc": "今山东平度市东南大朱毛",
+   "offset_km": 28.2
+  },
+  "boyang": {
+   "name": "博陽",
+   "status": "matched",
+   "sys_id": 85652,
+   "name_ft": "博陽縣",
+   "type": "县",
+   "years": [
+    -221,
+    -188
+   ],
+   "lon": 117.19949,
+   "lat": 36.10761,
+   "pres_loc": "今山东泰安市东南旧县",
+   "offset_km": 10.1
+  }
+ }
+}

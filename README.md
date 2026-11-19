@@ -7,7 +7,7 @@
 | Path | What |
 | --- | --- |
 | `data/raw/` | 维基文库 wikitext snapshots (史記 卷7/8/48, 資治通鑑 卷7–11). See `SOURCE.md`. |
-| `data/curated/` | Hand-curated inputs: `gazetteer.json` (places + approx coords), `events.json`, `kingdoms_206.json`, `luqian_ledger.json` (fictional). |
+| `data/curated/` | Hand-curated inputs: `gazetteer.json` (places + approx coords), `chgis_v6.json` (CHGIS V6 matches, applied over the approx coords), `events.json`, `kingdoms_206.json`, `luqian_ledger.json` (fictional). |
 | `pipeline/` | Python 3.10, stdlib only. Regex cleaning → parsing → place matching → event citation linking → outputs. |
 | `db/` | PostGIS schema + generated `seed.sql`. |
 | `web/` | React + Vite + MapLibre GL split-screen map/timeline. Reads `web/public/data/*`. |
@@ -41,7 +41,7 @@ cd web && npm install && npm run dev
 
 ## Caveats
 
-- **Coordinates are approximate** (modern-site estimates, `precision: "approx"`, `chgis_id: null`). Next step: replace them with CHGIS v6 points.
+- **Coordinates**: 34 of the 55 places use CHGIS V6 time-series county/prefecture points whose instance overlaps 前209–前202 (`precision: "chgis"`, `chgis_id: hvd_<SYS_ID>`). 漁陽 uses the 前201 commandery seat (`chgis_adjacent`). The other 20 keep approximate coordinates, and `geo_note` says why: either V6 has no instance in this period (豐, 新安, 廢丘…), the place is not an administrative seat (霸上, 鴻門, 垓下…), or the match was rejected (廣武: V6's 廣武縣 is in Shanxi). To re-run the match, download the UTF-8/WGS84 point layers from [CHGIS V6](https://dataverse.harvard.edu/dataverse/chgis_v6) and run `python -m shiji_atlas.chgis --cnty <cnty .dbf> --pref <pref .dbf>`. CHGIS data is © Harvard Fairbank Center / Fudan CHGS (2016), licensed for academic, non-commercial use.
 - **Calendar**: Qin and early Han years begin in 十月. `year_bce` follows 資治通鑑's label, so 高帝元年十月 is stored as 206 even though it falls in late 207 BCE. The `sort_key` orders months 十月 → 九月.
 - **陆迁 and his ledger are fictional.** The events, dates and places they link to come from the sources.
 - Basemap tiles: OpenStreetMap (prototype use only; switch to a self-hosted or keyed provider before any public deploy).

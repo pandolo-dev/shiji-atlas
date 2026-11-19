@@ -20,6 +20,7 @@ class Place:
     modern: str = ""
     precision: str = "approx"
     chgis_id: str | None = None
+    geo_note: str = ""
 
     @property
     def names(self) -> list[str]:

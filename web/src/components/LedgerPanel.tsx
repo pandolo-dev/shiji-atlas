@@ -1,5 +1,5 @@
 import type { AtlasData, LedgerEntry, PlaceFeature } from '../types'
-import { dateLabel } from '../data'
+import { dateLabel, precisionLabel } from '../data'
 
 interface Props { data: AtlasData; entry: LedgerEntry; placeById: Map<string, PlaceFeature> }
 
@@ -39,7 +39,7 @@ export default function LedgerPanel({ data, entry, placeById }: Props) {
             </tbody>
           </table>
         )}
-        <p className="place-note">今地：{place?.modern}（座標精度：{place?.precision}）</p>
+        <p className="place-note">今地：{place?.modern}（座標：{place && precisionLabel(place.precision)}）<br />{place?.geo_note}</p>
       </section>
 
       {event && (

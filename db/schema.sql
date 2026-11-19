@@ -7,8 +7,9 @@ CREATE TABLE places (
     aliases    jsonb NOT NULL DEFAULT '[]',
     kind       text NOT NULL,
     modern     text,
-    precision  text NOT NULL DEFAULT 'approx',  -- approx | chgis
-    chgis_id   text,                            -- CHGIS v6 point id once matched
+    precision  text NOT NULL DEFAULT 'approx',  -- approx | chgis | chgis_adjacent
+    chgis_id   text,                            -- CHGIS V6 TGAZ id (hvd_<SYS_ID>)
+    geo_note   text,                            -- CHGIS instance, or why there is none
     geom       geometry(Point, 4326) NOT NULL
 );
 CREATE INDEX places_geom_idx ON places USING gist (geom);

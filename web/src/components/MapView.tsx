@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import maplibregl, { type GeoJSONSource, type Map as MLMap } from 'maplibre-gl'
 import type { FeatureCollection, LineString, Point } from 'geojson'
 import type { AtlasData } from '../types'
+import { precisionLabel } from '../data'
 
 const BASEMAP: maplibregl.StyleSpecification = {
   version: 8,
@@ -38,7 +39,7 @@ export default function MapView({ data, idx, onSelect, showKingdoms }: Props) {
     m.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left')
     map.current = m
     m.on('load', () => {
-      m.addSource('places', { type: 'geojson', data: data.places })
+      m.addSource('places', { type: 'geojson', data: data.places, attribution: 'CHGIS V6 (Harvard/Fudan)' })
       m.addLayer({
         id: 'places', type: 'circle', source: 'places',
         paint: {
@@ -63,7 +64,7 @@ export default function MapView({ data, idx, onSelect, showKingdoms }: Props) {
         const yearsText = Object.entries(years).sort((a, b) => +b[0] - +a[0]).map(([y, n]) => `前${y}：${n}`).join('；')
         new maplibregl.Popup({ closeButton: false })
           .setLngLat((f.geometry as Point).coordinates as [number, number])
-          .setHTML(`<b>${p.name}</b><br/>今：${p.modern}<br/>當年提及 ${p.mentions_year} 次<br/><small>${yearsText}</small><br/><small>座標精度：${p.precision}</small>`)
+          .setHTML(`<b>${p.name}</b><br/>今：${p.modern}<br/>當年提及 ${p.mentions_year} 次<br/><small>${yearsText}</small><br/><small>座標：${precisionLabel(String(p.precision))}</small><br/><small>${p.geo_note}</small>`)
           .addTo(m)
       })
       m.on('mouseenter', 'places', () => { m.getCanvas().style.cursor = 'pointer' })

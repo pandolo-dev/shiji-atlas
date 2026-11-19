@@ -1,0 +1,316 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      117.12,
+      33.49
+     ],
+     [
+      114.88,
+      33.73
+     ],
+     [
+      116.93,
+      34.73
+     ],
+     [
+      115.57,
+      35.07
+     ],
+     [
+      115.03,
+      37.07
+     ],
+     [
+      109.05,
+      34.25
+     ],
+     [
+      109.3,
+      34.39
+     ],
+     [
+      108.79,
+      34.38
+     ],
+     [
+      117.18,
+      34.27
+     ],
+     [
+      113.47,
+      34.87
+     ],
+     [
+      113.53,
+      34.94
+     ],
+     [
+      117.55,
+      33.27
+     ],
+     [
+      115.57,
+      35.07
+     ]
+    ]
+   },
+   "properties": {
+    "merchant": "陸遷",
+    "fictional": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.12,
+     33.49
+    ]
+   },
+   "properties": {
+    "id": "lq-01",
+    "seq": 1,
+    "title": "大澤鄉阻雨",
+    "place_id": "dazexiang",
+    "place": "大澤鄉",
+    "year_bce": 209,
+    "month": 7
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     114.88,
+     33.73
+    ]
+   },
+   "properties": {
+    "id": "lq-02",
+    "seq": 2,
+    "title": "陳市易張楚錢",
+    "place_id": "chen",
+    "place": "陳",
+    "year_bce": 209,
+    "month": 8
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     116.93,
+     34.73
+    ]
+   },
+   "properties": {
+    "id": "lq-03",
+    "seq": 3,
+    "title": "沛縣城門",
+    "place_id": "pei",
+    "place": "沛",
+    "year_bce": 209,
+    "month": 9
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.57,
+     35.07
+    ]
+   },
+   "properties": {
+    "id": "lq-04",
+    "seq": 4,
+    "title": "定陶夜火",
+    "place_id": "dingtao",
+    "place": "定陶",
+    "year_bce": 208,
+    "month": 9
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.03,
+     37.07
+    ]
+   },
+   "properties": {
+    "id": "lq-05",
+    "seq": 5,
+    "title": "鉅鹿觀戰",
+    "place_id": "julu",
+    "place": "鉅鹿",
+    "year_bce": 207,
+    "month": 12
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.05,
+     34.25
+    ]
+   },
+   "properties": {
+    "id": "lq-06",
+    "seq": 6,
+    "title": "霸上約法",
+    "place_id": "bashang",
+    "place": "霸上",
+    "year_bce": 206,
+    "month": 10
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     109.3,
+     34.39
+    ]
+   },
+   "properties": {
+    "id": "lq-07",
+    "seq": 7,
+    "title": "鴻門之宴",
+    "place_id": "hongmen",
+    "place": "鴻門",
+    "year_bce": 206,
+    "month": 12
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     108.79,
+     34.38
+    ]
+   },
+   "properties": {
+    "id": "lq-08",
+    "seq": 8,
+    "title": "咸陽大火",
+    "place_id": "xianyang",
+    "place": "咸陽",
+    "year_bce": 206,
+    "month": 12
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.18,
+     34.27
+    ]
+   },
+   "properties": {
+    "id": "lq-09",
+    "seq": 9,
+    "title": "彭城睢水",
+    "place_id": "pengcheng",
+    "place": "彭城",
+    "year_bce": 205,
+    "month": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.47,
+     34.87
+    ]
+   },
+   "properties": {
+    "id": "lq-10",
+    "seq": 10,
+    "title": "滎陽糧道",
+    "place_id": "xingyang",
+    "place": "滎陽",
+    "year_bce": 204,
+    "month": 5
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     113.53,
+     34.94
+    ]
+   },
+   "properties": {
+    "id": "lq-11",
+    "seq": 11,
+    "title": "鴻溝畫界",
+    "place_id": "honggou",
+    "place": "鴻溝",
+    "year_bce": 203,
+    "month": 9
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     117.55,
+     33.27
+    ]
+   },
+   "properties": {
+    "id": "lq-12",
+    "seq": 12,
+    "title": "垓下楚歌",
+    "place_id": "gaixia",
+    "place": "垓下",
+    "year_bce": 202,
+    "month": 12
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     115.57,
+     35.07
+    ]
+   },
+   "properties": {
+    "id": "lq-13",
+    "seq": 13,
+    "title": "汜水稱帝",
+    "place_id": "dingtao",
+    "place": "定陶",
+    "year_bce": 202,
+    "month": 2
+   }
+  }
+ ]
+}

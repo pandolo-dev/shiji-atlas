@@ -1,0 +1,225 @@
+{
+ "merchant": "陸遷",
+ "fictional": true,
+ "note": "陸遷及其賬本為虛構人物與情節；所繫之事件、時間、地點據《資治通鑑》《史記》。",
+ "entries": [
+  {
+   "id": "lq-01",
+   "seq": 1,
+   "year_bce": 209,
+   "month": 7,
+   "place_id": "dazexiang",
+   "event_id": "dazexiang",
+   "title": "大澤鄉阻雨",
+   "text": "秋七月，負鹽北行，阻雨大澤鄉，道不通。有戍卒九百屯此，皆言失期當斬。是夜營中火起，不敢宿，棄鹽三斗而走。",
+   "goods": [
+    {
+     "item": "蓑笠",
+     "action": "售",
+     "qty": "20領",
+     "amount": "+400錢"
+    },
+    {
+     "item": "鹽",
+     "action": "棄",
+     "qty": "3斗",
+     "amount": "-150錢"
+    }
+   ]
+  },
+  {
+   "id": "lq-02",
+   "seq": 2,
+   "year_bce": 209,
+   "month": 8,
+   "place_id": "chen",
+   "event_id": "zhangchu",
+   "title": "陳市易張楚錢",
+   "text": "至陳。陳王已立，號張楚。市中糧價日高，軍吏收鐵器甚急。以布易粟，薄有贏。",
+   "goods": [
+    {
+     "item": "布",
+     "action": "售",
+     "qty": "10匹",
+     "amount": "+800錢"
+    },
+    {
+     "item": "粟",
+     "action": "購",
+     "qty": "5石",
+     "amount": "-600錢"
+    }
+   ]
+  },
+  {
+   "id": "lq-03",
+   "seq": 3,
+   "year_bce": 209,
+   "month": 9,
+   "place_id": "pei",
+   "event_id": "pei_rise",
+   "title": "沛縣城門",
+   "text": "九月過沛。父老殺沛令，立劉季為沛公，城門晝閉夜啟。售刀二十口於子弟兵。",
+   "goods": [
+    {
+     "item": "鐵刀",
+     "action": "售",
+     "qty": "20口",
+     "amount": "+1200錢"
+    }
+   ]
+  },
+  {
+   "id": "lq-04",
+   "seq": 4,
+   "year_bce": 208,
+   "month": 9,
+   "place_id": "dingtao",
+   "event_id": "dingtao",
+   "title": "定陶夜火",
+   "text": "九月至定陶。章邯夜襲，項梁死。楚營潰散，貨車失其一。",
+   "goods": [
+    {
+     "item": "車",
+     "action": "失",
+     "qty": "1乘",
+     "amount": "-2000錢"
+    }
+   ]
+  },
+  {
+   "id": "lq-05",
+   "seq": 5,
+   "year_bce": 207,
+   "month": 12,
+   "place_id": "julu",
+   "event_id": "julu",
+   "title": "鉅鹿觀戰",
+   "text": "十二月北販至鉅鹿。楚軍渡河，沈船破釜，諸侯軍皆壁上觀。賣草料於諸侯軍。",
+   "goods": [
+    {
+     "item": "芻藁",
+     "action": "售",
+     "qty": "50束",
+     "amount": "+500錢"
+    }
+   ]
+  },
+  {
+   "id": "lq-06",
+   "seq": 6,
+   "year_bce": 206,
+   "month": 10,
+   "place_id": "bashang",
+   "event_id": "bashang",
+   "title": "霸上約法",
+   "text": "冬十月，隨楚軍入關，至霸上。沛公與父老約法三章，殺人者死，傷人及盜抵罪。秦民持牛羊酒食獻軍，軍中辭而不受。商旅得安，記之。",
+   "goods": [
+    {
+     "item": "酒",
+     "action": "售",
+     "qty": "4甕",
+     "amount": "+320錢"
+    }
+   ]
+  },
+  {
+   "id": "lq-07",
+   "seq": 7,
+   "year_bce": 206,
+   "month": 12,
+   "place_id": "hongmen",
+   "event_id": "hongmen",
+   "title": "鴻門之宴",
+   "text": "十二月，項羽兵四十萬屯新豐鴻門。聞沛公來謝，宴罷，沛公從間道走霸上。是日軍中禁市。",
+   "goods": []
+  },
+  {
+   "id": "lq-08",
+   "seq": 8,
+   "year_bce": 206,
+   "month": 12,
+   "place_id": "xianyang",
+   "event_id": "xianyang_burn",
+   "title": "咸陽大火",
+   "text": "數日後，項羽屠咸陽，燒秦宮室，火三月不滅。所藏帛盡焚，此行虧甚。",
+   "goods": [
+    {
+     "item": "帛",
+     "action": "焚",
+     "qty": "12匹",
+     "amount": "-1800錢"
+    }
+   ]
+  },
+  {
+   "id": "lq-09",
+   "seq": 9,
+   "year_bce": 205,
+   "month": 4,
+   "place_id": "pengcheng",
+   "event_id": "pengcheng",
+   "title": "彭城睢水",
+   "text": "夏四月，漢王入彭城，置酒高會。項羽自齊回擊，漢卒入睢水者十餘萬，水為之不流。陸遷匿於民家得免。",
+   "goods": []
+  },
+  {
+   "id": "lq-10",
+   "seq": 10,
+   "year_bce": 204,
+   "month": 5,
+   "place_id": "xingyang",
+   "event_id": "xingyang",
+   "title": "滎陽糧道",
+   "text": "五月在滎陽。楚圍急，紀信乘王車出東門詐降，漢王自西門出。城中粟石萬錢，售所藏粟。",
+   "goods": [
+    {
+     "item": "粟",
+     "action": "售",
+     "qty": "2石",
+     "amount": "+20000錢"
+    }
+   ]
+  },
+  {
+   "id": "lq-11",
+   "seq": 11,
+   "year_bce": 203,
+   "month": 9,
+   "place_id": "honggou",
+   "event_id": "honggou",
+   "title": "鴻溝畫界",
+   "text": "九月，楚漢約中分天下，割鴻溝以西為漢，以東為楚。太公、呂后歸漢。兩軍罷，鴻溝渡口復通商。",
+   "goods": [
+    {
+     "item": "鹽",
+     "action": "購",
+     "qty": "10斗",
+     "amount": "-500錢"
+    }
+   ]
+  },
+  {
+   "id": "lq-12",
+   "seq": 12,
+   "year_bce": 202,
+   "month": 12,
+   "place_id": "gaixia",
+   "event_id": "gaixia",
+   "title": "垓下楚歌",
+   "text": "十二月，垓下。夜聞漢軍四面皆楚歌，楚卒多亡去。陸遷自此南歸。",
+   "goods": []
+  },
+  {
+   "id": "lq-13",
+   "seq": 13,
+   "year_bce": 202,
+   "month": 2,
+   "place_id": "dingtao",
+   "event_id": "emperor",
+   "title": "汜水稱帝",
+   "text": "二月甲午，漢王即皇帝位於汜水之陽。結賬：八年之中，往返數千里，所得不償所失，然身尚存。",
+   "goods": []
+  }
+ ]
+}

@@ -67,6 +67,55 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(ps["五年，高祖與諸"].year_bce, 202)
         self.assertEqual(ps["五年，高祖與諸"].date_source, "marker")
 
+    def test_shiji_splits_paragraph_on_later_marker(self):
+        raw = "秦二世元年秋，陳勝等起蘄，至陳而王。其後漢元年十月，沛公兵遂先諸侯至霸上。"
+        ps = shiji.parse(raw, 8, "高祖本紀")
+        self.assertEqual([(p.id, p.year_bce, p.date_source) for p in ps],
+                         [("sj-008-001a", 209, "marker"), ("sj-008-001b", 206, "marker")])
+        self.assertTrue(ps[1].text.startswith("漢元年"))
+
+    def test_shiji_commentary_runs_to_chapter_end(self):
+        raw = "秦二世元年秋，陳勝起。\n太史公曰：吾聞之周生曰。\n二世三年，其後論贊之文如此。"
+        ps = shiji.parse(raw, 8, "高祖本紀")
+        self.assertEqual([p.kind for p in ps], ["narrative", "commentary", "commentary"])
+
+
+def sj(i, year, text, source="carried"):
+    return tongjian.Passage(f"sj-007-{i:03d}", "史記", 7, year, "項羽本紀·x", i, "narrative", text,
+                            date_source=source)
+
+
+def ev(eid, year, kw, **extra):
+    return {"id": eid, "title": eid, "year_bce": year, "month": 1, "keywords": [kw],
+            "sort_key": sort_key(year, 1), **extra}
+
+
+class DatingTests(unittest.TestCase):
+    def test_carried_keyword_outside_window_is_not_anchored(self):
+        ps = [sj(1, 208, "二世二年", "marker"), sj(2, 208, "項王數之曰：坑秦卒於新安"), sj(3, 208, "後事")]
+        build.date_shiji([ev("xinan", 206, "新安")], ps)
+        self.assertEqual([(p.year_bce, p.date_source) for p in ps[1:]], [(208, "carried"), (208, "carried")])
+
+    def test_window_chains_in_document_order(self):
+        ps = [sj(1, 208, "二世二年", "marker"), sj(2, 208, "鉅鹿之戰"), sj(3, 208, "到新安"), sj(4, 208, "後事")]
+        build.date_shiji([ev("julu", 207, "鉅鹿"), ev("xinan", 206, "新安")], ps)
+        self.assertEqual([p.year_bce for p in ps], [208, 207, 206, 206])
+        self.assertEqual(ps[2].date_source, "event_keyword")
+
+    def test_anchor_outside_neighbour_markers_is_rejected(self):
+        ps = [sj(1, 204, "三年", "marker"), sj(2, 204, "彭越渡睢水"), sj(3, 203, "四年", "marker")]
+        build.date_shiji([ev("pengcheng", 205, "睢水")], ps)
+        self.assertEqual((ps[1].year_bce, ps[1].date_flag), (204, "anchor_rejected(pengcheng)"))
+
+    def test_allowlist_overrides_window(self):
+        ps = [sj(1, 208, "二世二年", "marker"), sj(2, 208, "無關鍵字")]
+        build.date_shiji([ev("xinan", 206, "新安", passages=["sj-007-002"])], ps)
+        self.assertEqual((ps[1].year_bce, ps[1].date_source), (206, "event_allowlist"))
+
+    def test_flag_contradicting_both_neighbours(self):
+        ps = [sj(1, 204, "", "marker"), sj(2, 206, "", "event_allowlist"), sj(3, 203, "", "marker")]
+        self.assertEqual([p.id for p in build.flag_contradictions(ps)], ["sj-007-002"])
+
 
 class BuildTests(unittest.TestCase):
     def test_build_outputs_validate(self):

@@ -24,7 +24,8 @@ class Passage:
     ganzhi: str = ""
     months: list[int] = field(default_factory=list)
     places: dict[str, int] = field(default_factory=dict)
-    date_source: str = "heading"  # heading | marker | carried | event
+    date_source: str = "heading"  # heading | marker | carried | event_keyword | event_allowlist
+    date_flag: str = ""
 
     def to_dict(self) -> dict:
         return asdict(self)

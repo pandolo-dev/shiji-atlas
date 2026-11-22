@@ -100,6 +100,11 @@ class YanyiTests(unittest.TestCase):
             ("yy-010-003", "commentary", 205, "carried"),
         ])
 
+    def test_carried_label_keeps_own_chapter(self):
+        ps = yanyi.parse([(9, self.CH9), (10, self.CH10)])
+        build.date_carried([], ps)
+        self.assertEqual(ps[5].year_label, "第10回·二世元年七月")
+
     def test_yanyi_keywords_and_rejected_anchor_not_cited(self):
         p = tongjian.Passage("yy-030-001", yanyi.WORK, 30, 204, "x", 1, "narrative",
                              "從前鴻門會宴時，臣曾勸大王。劃鴻溝為界", date_flag="anchor_rejected(hongmen)")

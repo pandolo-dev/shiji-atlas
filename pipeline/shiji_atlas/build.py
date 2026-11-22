@@ -82,12 +82,14 @@ def date_carried(events: list[dict], passages: list) -> None:
         for i in range(len(seq) - 2, -1, -1):
             q = seq[i + 1]
             nxt[i] = q.year_bce if q.date_source == "marker" else nxt[i + 1]
-        run_year, run_label = seq[0].year_bce, seq[0].year_label
+        # labels are "<chapter>·<year>"; only the year part carries, so 前漢演義 keeps its own 回
+        run_year, run_label = seq[0].year_bce, seq[0].year_label.split("·", 1)[1]
         for i, p in enumerate(seq):
+            chapter, label = p.year_label.split("·", 1)
             if p.date_source == "marker":
-                run_year, run_label = p.year_bce, p.year_label
+                run_year, run_label = p.year_bce, label
                 continue
-            p.year_bce, p.year_label = run_year, run_label
+            p.year_bce, p.year_label = run_year, f"{chapter}·{run_label}"
             if p.kind != "narrative":
                 continue
             allow = [e for e in events if p.id in e.get("passages", [])]
@@ -100,7 +102,8 @@ def date_carried(events: list[dict], passages: list) -> None:
             if ok:
                 ev = min(ok, key=lambda e: (abs(e["year_bce"] - run_year), e["sort_key"]))
                 p.year_bce = run_year = ev["year_bce"]
-                p.year_label = run_label = f"{p.year_label.split('·')[0]}·繫於「{ev['title']}」"
+                run_label = f"繫於「{ev['title']}」"
+                p.year_label = f"{chapter}·{run_label}"
                 p.date_source = "event_allowlist" if allow else "event_keyword"
 
 

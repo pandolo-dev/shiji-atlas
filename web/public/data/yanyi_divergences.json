@@ -1,0 +1,121 @@
+[
+ {
+  "id": "qiji_meeting",
+  "type": "invented",
+  "title": "彭城敗走途中得戚姬",
+  "chapter": 24,
+  "anchor": "老朽姓戚",
+  "event_id": "pengcheng",
+  "yanyi": "漢王彭城敗後夜投戚姓老人家，老人以女相許，漢王解玉帶為聘。",
+  "history": "《史記》只說漢王時「得定陶戚姬」，未記相遇經過。",
+  "sources": [
+   {
+    "work": "史記",
+    "juan": 9,
+    "title": "呂太后本紀",
+    "quote": "及高祖為漢王，得定陶戚姬，愛幸",
+    "passage_id": null
+   }
+  ],
+  "author_note": "本回敘及戚姬，所以原人彘之禍，不沒陵母，所以揚彤幃之光，詳正史之所略",
+  "passage_id": "yy-024-003",
+  "year_bce": 205,
+  "type_label": "虛構"
+ },
+ {
+  "id": "mingxiu_zhandao",
+  "type": "altered",
+  "title": "明修棧道，暗渡陳倉",
+  "chapter": 22,
+  "anchor": "明修棧道，暗渡陳倉",
+  "event_id": "chencang",
+  "yanyi": "張良定計，派兵數百人佯修棧道迷惑章邯，主力由故道出陳倉。",
+  "history": "《高祖本紀》說計出韓信，只言「從故道還」，無佯修棧道之事；《留侯世家》中張良只勸燒絕棧道。",
+  "sources": [
+   {
+    "work": "史記",
+    "juan": 8,
+    "title": "高祖本紀",
+    "quote": "漢王用韓信之計，從故道還，襲雍王章邯",
+    "passage_id": "sj-008-029"
+   },
+   {
+    "work": "史記",
+    "juan": 55,
+    "title": "留侯世家",
+    "quote": "王何不燒絕所過棧道，示天下無還心",
+    "passage_id": null
+   }
+  ],
+  "passage_id": "yy-022-002b",
+  "year_bce": 206,
+  "type_label": "改寫"
+ },
+ {
+  "id": "shimian_maifu",
+  "type": "embellished",
+  "title": "十面埋伏",
+  "chapter": 31,
+  "anchor": "特將各軍分作十隊",
+  "event_id": "gaixia",
+  "yanyi": "韓信分兵十隊埋伏，自率三萬人誘項王入伏。",
+  "history": "《高祖本紀》記垓下陣法為韓信居中、孔將軍居左、費將軍居右，無十面埋伏。",
+  "sources": [
+   {
+    "work": "史記",
+    "juan": 8,
+    "title": "高祖本紀",
+    "quote": "淮陰侯將三十萬自當之，孔將軍居左，費將軍居右",
+    "passage_id": "sj-008-052"
+   }
+  ],
+  "author_note": "韓信之十面埋伏計，史策未詳，但相傳已久",
+  "passage_id": "yy-031-003",
+  "year_bce": 202,
+  "type_label": "增飾"
+ },
+ {
+  "id": "zhangliang_chuge",
+  "type": "embellished",
+  "title": "張良編楚歌",
+  "chapter": 31,
+  "anchor": "乃是漢營中張子房，編出一曲楚歌",
+  "event_id": "gaixia",
+  "yanyi": "四面楚歌為張良所編，教軍士在楚營旁唱和，致楚兵散去。",
+  "history": "《史記》只記漢軍四面皆楚歌，未說何人所作。",
+  "sources": [
+   {
+    "work": "史記",
+    "juan": 7,
+    "title": "項羽本紀",
+    "quote": "夜聞漢軍四面皆楚歌",
+    "passage_id": "sj-007-040"
+   }
+  ],
+  "passage_id": "yy-031-006",
+  "year_bce": 202,
+  "type_label": "增飾"
+ },
+ {
+  "id": "yuji_death",
+  "type": "invented",
+  "title": "虞姬和詩、自刎",
+  "chapter": 31,
+  "anchor": "就從項王腰間，拔出佩劍",
+  "event_id": "gaixia",
+  "yanyi": "虞姬吟「漢兵已略地」詩，拔項王佩劍自刎，葬於定遠。",
+  "history": "《史記》只說「歌數闋，美人和之」，不錄和詩，也不載虞姬之死；和詩見《史記正義》引《楚漢春秋》（《困學紀聞》卷十二轉引）。",
+  "sources": [
+   {
+    "work": "史記",
+    "juan": 7,
+    "title": "項羽本紀",
+    "quote": "歌數闋，美人和之",
+    "passage_id": "sj-007-040"
+   }
+  ],
+  "passage_id": "yy-031-011",
+  "year_bce": 202,
+  "type_label": "虛構"
+ }
+]

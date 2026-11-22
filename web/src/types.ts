@@ -9,16 +9,22 @@ export interface LedgerEntry {
 
 export interface Ledger { merchant: string; fictional: boolean; note: string; entries: LedgerEntry[] }
 
+export interface Divergence {
+  id: string; type: string; type_label: string; title: string; chapter: number; passage_id: string; year_bce: number
+  event_id: string | null; yanyi: string; history: string; author_note?: string
+  sources: { work: string; juan: number; title: string; quote: string; passage_id: string | null }[]
+}
+
 export interface Citation { passage_id: string; work: string; juan: number; year_label: string; year_bce: number; snippet: string }
 
 export interface HistEvent {
   id: string; title: string; year_bce: number; month: number | null; sort_key: number
-  place_id: string; keywords: string[]; summary: string; citations: Citation[]
+  place_id: string; keywords: string[]; yanyi_keywords?: string[]; summary: string; citations: Citation[]
 }
 
 export interface Passage {
   id: string; work: string; juan: number; year_bce: number; year_label: string; entry_no: number
-  kind: 'narrative' | 'commentary'; text: string; months: number[]; places: Record<string, number>; date_source: string; date_flag: string
+  kind: 'narrative' | 'commentary' | 'aside'; text: string; months: number[]; places: Record<string, number>; date_source: string; date_flag: string
 }
 
 export interface PlaceProps {
@@ -32,5 +38,5 @@ export type RouteFC = FeatureCollection<LineString | Point>
 export type PlaceFeature = Feature<Point, PlaceProps>
 
 export interface AtlasData {
-  ledger: Ledger; events: HistEvent[]; passages: Passage[]; places: PlaceFC; route: RouteFC
+  ledger: Ledger; events: HistEvent[]; passages: Passage[]; places: PlaceFC; route: RouteFC; divergences: Divergence[]
 }

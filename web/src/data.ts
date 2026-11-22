@@ -9,15 +9,16 @@ async function get<T>(name: string): Promise<T> {
 }
 
 export async function loadAtlas(): Promise<AtlasData> {
-  const [ledger, events, passages, places, route] = await Promise.all([
+  const [ledger, events, passages, places, route, divergences] = await Promise.all([
     get<AtlasData['ledger']>('luqian_ledger.json'),
     get<AtlasData['events']>('events.json'),
     get<AtlasData['passages']>('passages.json'),
     get<AtlasData['places']>('places.geojson'),
     get<AtlasData['route']>('luqian_route.geojson'),
+    get<AtlasData['divergences']>('yanyi_divergences.json'),
   ])
   ledger.entries.sort((a, b) => a.seq - b.seq)
-  return { ledger, events, passages, places, route }
+  return { ledger, events, passages, places, route, divergences }
 }
 
 const CN = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二']
@@ -34,6 +35,12 @@ export function reignYear(yearBce: number): string {
 
 export function dateLabel(yearBce: number, month: number | null): string {
   return `前${yearBce}年 · ${reignYear(yearBce)}${monthName(month)}`
+}
+
+export const YANYI = '前漢演義'
+
+export function sourceLabel(work: string, juan: number): string {
+  return work === YANYI ? `《${work}》第${juan}回` : `《${work}》卷${juan}`
 }
 
 const PRECISION: Record<string, string> = { chgis: 'CHGIS V6', chgis_adjacent: 'CHGIS V6（鄰近年份）', approx: '估計' }

@@ -3,7 +3,7 @@ import sys
 import urllib.parse
 import urllib.request
 
-from .build import RAW, SHIJI, TONGJIAN
+from .build import RAW, SHIJI, TONGJIAN, YANYI
 
 URL = "https://zh.wikisource.org/w/index.php?title={}&action=raw"
 
@@ -11,6 +11,7 @@ URL = "https://zh.wikisource.org/w/index.php?title={}&action=raw"
 def pages() -> list[tuple[str, str]]:
     out = [(f"史記/卷{j:03d}", f"史記_卷{j:03d}.wiki") for j in SHIJI]
     out += [(f"資治通鑑/卷{j:03d}", f"資治通鑑_卷{j:03d}.wiki") for j in TONGJIAN]
+    out += [(f"前漢演義/第{n:03d}回", f"前漢演義_第{n:03d}回.wiki") for n in YANYI]
     return out
 
 

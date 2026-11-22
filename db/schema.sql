@@ -22,13 +22,13 @@ CREATE TABLE kingdoms_206 (
 
 CREATE TABLE passages (
     id          text PRIMARY KEY,
-    work        text NOT NULL,       -- 資治通鑑 | 史記
+    work        text NOT NULL,       -- 資治通鑑 | 史記 | 前漢演義
     juan        int  NOT NULL,
     year_bce    int  NOT NULL,       -- Tongjian year label, e.g. 206 for 高帝元年
     year_label  text NOT NULL,
     ganzhi      text,
     entry_no    int  NOT NULL,
-    kind        text NOT NULL,       -- narrative | commentary
+    kind        text NOT NULL,       -- narrative | commentary | aside (演義 couplets, 下回分解)
     date_source text NOT NULL,       -- heading | marker | event | carried
     months      jsonb NOT NULL DEFAULT '[]',
     text        text NOT NULL
@@ -57,6 +57,19 @@ CREATE TABLE event_citations (
     passage_id text NOT NULL REFERENCES passages(id),
     snippet    text NOT NULL,
     PRIMARY KEY (event_id, passage_id)
+);
+
+-- Episodes where 蔡東藩《前漢演義》 departs from, or is not supported by, 《史記》.
+CREATE TABLE yanyi_divergences (
+    id          text PRIMARY KEY,
+    type        text NOT NULL,                      -- invented | altered | embellished
+    title       text NOT NULL,
+    passage_id  text NOT NULL REFERENCES passages(id),
+    event_id    text REFERENCES events(id),
+    yanyi       text NOT NULL,                      -- what the novel says
+    history     text NOT NULL,                      -- what the sources say
+    sources     jsonb NOT NULL,                     -- [{work, juan, title, quote, passage_id|null}]
+    author_note text                                -- 蔡東藩's own admission, if any
 );
 
 -- Fictional ledger of the itinerant merchant 陸遷.

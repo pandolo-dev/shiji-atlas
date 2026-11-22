@@ -1,5 +1,5 @@
 import type { AtlasData, LedgerEntry, PlaceFeature } from '../types'
-import { dateLabel, precisionLabel } from '../data'
+import { YANYI, dateLabel, precisionLabel, sourceLabel } from '../data'
 
 interface Props { data: AtlasData; entry: LedgerEntry; placeById: Map<string, PlaceFeature> }
 
@@ -14,8 +14,10 @@ export default function LedgerPanel({ data, entry, placeById }: Props) {
   const place = placeById.get(entry.place_id)?.properties
   const event = data.events.find((e) => e.id === entry.event_id)
   const sameYearPlace = data.passages.filter(
-    (p) => p.kind === 'narrative' && p.year_bce === entry.year_bce && p.places[entry.place_id],
+    (p) => p.kind === 'narrative' && p.work !== YANYI && p.year_bce === entry.year_bce && p.places[entry.place_id],
   )
+  const divergences = data.divergences.filter((d) => d.event_id === entry.event_id)
+  const divergentPassages = new Set(divergences.map((d) => d.passage_id))
   const yearEvents = data.events.filter((e) => e.year_bce === entry.year_bce)
 
   return (
@@ -49,8 +51,31 @@ export default function LedgerPanel({ data, entry, placeById }: Props) {
           <ul className="cites">
             {event.citations.map((c) => (
               <li key={c.passage_id}>
-                <span className="src">《{c.work}》卷{c.juan}·{c.year_label}</span>
-                <span className="snip">{highlight(c.snippet, event.keywords)}</span>
+                <span className="src">
+                  {sourceLabel(c.work, c.juan)}·{c.year_label}
+                  {c.work === YANYI && <span className="novel" title="蔡東藩1925年白話小說，非史料">小說</span>}
+                  {divergentPassages.has(c.passage_id) && <span className="novel diverge">與史不合</span>}
+                </span>
+                <span className="snip">{highlight(c.snippet, [...event.keywords, ...(event.yanyi_keywords ?? [])])}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {divergences.length > 0 && (
+        <section className="card">
+          <h3>演義與史書的出入（{divergences.length}）</h3>
+          <ul className="cites">
+            {divergences.map((d) => (
+              <li key={d.id}>
+                <span className="src">《{YANYI}》第{d.chapter}回 <span className="novel diverge">{d.type_label}</span></span>
+                <b>{d.title}</b>：{d.yanyi}<br />
+                <span className="history">史書：{d.history}</span>
+                {d.sources.map((s) => (
+                  <span key={s.quote} className="src">《{s.work}·{s.title}》「{s.quote}」</span>
+                ))}
+                {d.author_note && <span className="src">蔡東藩自評：「{d.author_note}」</span>}
               </li>
             ))}
           </ul>

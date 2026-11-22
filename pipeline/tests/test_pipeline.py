@@ -2,7 +2,7 @@ import json
 import unittest
 from pathlib import Path
 
-from shiji_atlas import build, shiji, tongjian
+from shiji_atlas import build, shiji, tongjian, yanyi
 from shiji_atlas.gazetteer import Gazetteer, Place
 from shiji_atlas.numerals import cn_to_int, find_months, sort_key
 from shiji_atlas.wikitext import clean_inline, preprocess
@@ -80,6 +80,52 @@ class ParserTests(unittest.TestCase):
         self.assertEqual([p.kind for p in ps], ["narrative", "commentary", "commentary"])
 
 
+class YanyiTests(unittest.TestCase):
+    CH9 = ("{{header\n| title = 前漢演義\n}}\n\n\u3000\u3000卻說二世再興土木。\n\n"
+           "\u3000\u3000到了二世元年七月，陳勝吳廣起事。\n\n\u3000\u3000飾禮寧知真下士？偽恭但欲暫欺人。\n\n"
+           "\u3000\u3000畢竟大梁二士姓甚名誰，容待下回詳報。\n\n\n\u3000\u3000暴秦之季，發難者為陳勝吳廣。")
+    CH10 = "\u3000\u3000陳勝稱王。時已為漢王二年了，彭城大敗。\n\u3000\u3000欲知後事，且看下回。\n\u3000\u3000本回評語。"
+
+    def test_kinds_and_year_carried_across_chapters(self):
+        ps = yanyi.parse([(9, self.CH9), (10, self.CH10)])
+        self.assertEqual([(p.id, p.kind, p.year_bce, p.date_source) for p in ps], [
+            ("yy-009-001", "narrative", 209, "carried"),
+            ("yy-009-002", "narrative", 209, "marker"),
+            ("yy-009-003", "aside", 209, "carried"),
+            ("yy-009-004", "aside", 209, "carried"),
+            ("yy-009-005", "commentary", 209, "carried"),
+            ("yy-010-001a", "narrative", 209, "carried"),
+            ("yy-010-001b", "narrative", 205, "marker"),
+            ("yy-010-002", "aside", 205, "carried"),
+            ("yy-010-003", "commentary", 205, "carried"),
+        ])
+
+    def test_carried_label_keeps_own_chapter(self):
+        ps = yanyi.parse([(9, self.CH9), (10, self.CH10)])
+        build.date_carried([], ps)
+        self.assertEqual(ps[5].year_label, "第10回·二世元年七月")
+
+    def test_yanyi_keywords_and_rejected_anchor_not_cited(self):
+        p = tongjian.Passage("yy-030-001", yanyi.WORK, 30, 204, "x", 1, "narrative",
+                             "從前鴻門會宴時，臣曾勸大王。劃鴻溝為界", date_flag="anchor_rejected(hongmen)")
+        evs = [ev("hongmen", 205, "鴻門"), ev("honggou", 203, "洪溝", yanyi_keywords=["鴻溝"])]
+        build.link_events(evs, [p])
+        self.assertEqual([len(e["citations"]) for e in evs], [0, 1])
+
+    def test_divergence_quotes_resolve_or_fail(self):
+        ps = [tongjian.Passage("yy-031-001", yanyi.WORK, 31, 202, "x", 1, "narrative", "張子房編出一曲楚歌"),
+              sj(40, 202, "夜聞漢軍四面皆楚歌")]
+        item = {"id": "chuge", "type": "embellished", "chapter": 31, "anchor": "編出一曲楚歌", "sources": [
+            {"work": "史記", "juan": 7, "title": "項羽本紀", "quote": "四面皆楚歌"},
+            {"work": "史記", "juan": 55, "title": "留侯世家", "quote": "不在語料"}]}
+        doc = {"types": {"embellished": "增飾"}, "items": [item]}
+        out, errors = build.resolve_divergences(doc, ps, [])
+        self.assertEqual((errors, out[0]["passage_id"]), ([], "yy-031-001"))
+        self.assertEqual([s["passage_id"] for s in out[0]["sources"]], ["sj-007-040", None])
+        bad = dict(item, sources=[{"work": "史記", "juan": 7, "title": "項羽本紀", "quote": "無此語"}])
+        self.assertEqual(len(build.resolve_divergences({**doc, "items": [bad]}, ps, [])[1]), 1)
+
+
 def sj(i, year, text, source="carried"):
     return tongjian.Passage(f"sj-007-{i:03d}", "史記", 7, year, "項羽本紀·x", i, "narrative", text,
                             date_source=source)
@@ -93,23 +139,23 @@ def ev(eid, year, kw, **extra):
 class DatingTests(unittest.TestCase):
     def test_carried_keyword_outside_window_is_not_anchored(self):
         ps = [sj(1, 208, "二世二年", "marker"), sj(2, 208, "項王數之曰：坑秦卒於新安"), sj(3, 208, "後事")]
-        build.date_shiji([ev("xinan", 206, "新安")], ps)
+        build.date_carried([ev("xinan", 206, "新安")], ps)
         self.assertEqual([(p.year_bce, p.date_source) for p in ps[1:]], [(208, "carried"), (208, "carried")])
 
     def test_window_chains_in_document_order(self):
         ps = [sj(1, 208, "二世二年", "marker"), sj(2, 208, "鉅鹿之戰"), sj(3, 208, "到新安"), sj(4, 208, "後事")]
-        build.date_shiji([ev("julu", 207, "鉅鹿"), ev("xinan", 206, "新安")], ps)
+        build.date_carried([ev("julu", 207, "鉅鹿"), ev("xinan", 206, "新安")], ps)
         self.assertEqual([p.year_bce for p in ps], [208, 207, 206, 206])
         self.assertEqual(ps[2].date_source, "event_keyword")
 
     def test_anchor_outside_neighbour_markers_is_rejected(self):
         ps = [sj(1, 204, "三年", "marker"), sj(2, 204, "彭越渡睢水"), sj(3, 203, "四年", "marker")]
-        build.date_shiji([ev("pengcheng", 205, "睢水")], ps)
+        build.date_carried([ev("pengcheng", 205, "睢水")], ps)
         self.assertEqual((ps[1].year_bce, ps[1].date_flag), (204, "anchor_rejected(pengcheng)"))
 
     def test_allowlist_overrides_window(self):
         ps = [sj(1, 208, "二世二年", "marker"), sj(2, 208, "無關鍵字")]
-        build.date_shiji([ev("xinan", 206, "新安", passages=["sj-007-002"])], ps)
+        build.date_carried([ev("xinan", 206, "新安", passages=["sj-007-002"])], ps)
         self.assertEqual((ps[1].year_bce, ps[1].date_source), (206, "event_allowlist"))
 
     def test_flag_contradicting_both_neighbours(self):

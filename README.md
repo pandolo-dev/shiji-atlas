@@ -6,7 +6,7 @@
 
 | Path | What |
 | --- | --- |
-| `data/raw/` | 维基文库 wikitext snapshots (史記 卷7/8/48, 資治通鑑 卷7–11). See `SOURCE.md`. |
+| `data/raw/` | 维基文库 wikitext snapshots (史記 卷7/8/48, 資治通鑑 卷7–11, 蔡東藩《前漢演義》第9–32回). See `SOURCE.md`. |
 | `data/curated/` | Hand-curated inputs: `gazetteer.json` (places + approx coords), `chgis_v6.json` (CHGIS V6 matches, applied over the approx coords), `events.json`, `kingdoms_206.json`, `luqian_ledger.json` (fictional). |
 | `pipeline/` | Python 3.10, stdlib only. Regex cleaning → parsing → place matching → event citation linking → outputs. |
 | `db/` | PostGIS schema + generated `seed.sql`. |
@@ -40,6 +40,7 @@ cd web && npm install && npm run dev
 
    `太史公曰` / `褚先生曰` and everything after them is marked as `commentary`.
 4. **Places** (`gazetteer.py`): longest-alias-first matching. One-character names (陳, 沛, 豐, 薛, 宛) only count when preceded by a locative verb/preposition (至陳, 攻豐…) and not followed by an excluded char (陳勝, 沛公).
+4b. **前漢演義** (`yanyi.py`): 蔡東藩's 1925 vernacular novel, 第9回 (大澤鄉) to 第32回 (即帝位). It is read as one continuous text, so the year carries across chapters, using the same markers, ±1 keyword window and flags as 史記 (`二世元年`, `漢王二年`). Lines after the closing formula (`下回分解`) are 蔡東藩's 評 (`commentary`); couplets and the closing formula are `aside`. His inline 夾批 (e.g. `特標年月，點清眉目。`) are not marked in the source and stay in the narrative text. The novel is cited under events but never counts toward map mentions. `data/curated/yanyi_divergences.json` lists episodes where it departs from 《史記》; the build checks every anchor and every quote that falls inside the corpus.
 5. **Events** (`build.py`): each curated event has keywords. It is linked to every passage that contains all of them and is in the same year (資治通鑑) or within ±1 year (史記). Missing 資治通鑑 citations fail the build.
 
 ## Caveats
